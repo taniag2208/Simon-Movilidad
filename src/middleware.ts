@@ -6,7 +6,7 @@ const PROTECTED = ["/inicio", "/cargar", "/discovery"];
 
 function secretKey() {
   const secret =
-    process.env.AUTH_SECRET || "dev-only-insecure-secret-change-me-please-000000";
+    process.env.AUTH_SECRET || "ducSnOE6+thTdO1+AZBCYA3K4zwHm/qflEQCq9+3QYg=";
   return new TextEncoder().encode(secret);
 }
 

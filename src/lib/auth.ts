@@ -8,8 +8,9 @@ const MAX_AGE = 60 * 60 * 12; // 12 horas
 function getSecretKey() {
   const secret =
     process.env.AUTH_SECRET ||
-    // Fallback de desarrollo (NO usar en producción — define AUTH_SECRET).
-    "dev-only-insecure-secret-change-me-please-000000";
+    // Secreto por defecto del proyecto (server-only). Se puede sobreescribir
+    // con la variable de entorno AUTH_SECRET.
+    "ducSnOE6+thTdO1+AZBCYA3K4zwHm/qflEQCq9+3QYg=";
   return new TextEncoder().encode(secret);
 }
 
