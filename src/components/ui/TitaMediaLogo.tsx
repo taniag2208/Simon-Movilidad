@@ -8,7 +8,7 @@ export function TitaMediaLogo({
   className?: string;
   size?: "sm" | "md" | "lg";
 }) {
-  const width = size === "lg" ? 230 : size === "sm" ? 128 : 168;
+  const width = size === "lg" ? 196 : size === "sm" ? 132 : 168;
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
