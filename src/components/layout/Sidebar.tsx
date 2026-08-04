@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { Home, UploadCloud, Compass } from "lucide-react";
-import { Logo } from "@/components/ui/Logo";
 import { cn } from "@/lib/cn";
 
 const NAV = [
@@ -18,11 +17,7 @@ export function Sidebar() {
 
   return (
     <aside className="sticky top-0 hidden h-screen w-[264px] shrink-0 flex-col border-r border-white/[0.06] px-5 py-7 md:flex">
-      <div className="px-2">
-        <Logo />
-      </div>
-
-      <nav className="mt-10 flex flex-col gap-1.5">
+      <nav className="mt-2 flex flex-col gap-1.5">
         {NAV.map((item) => {
           const active = pathname === item.href || pathname.startsWith(item.href + "/");
           const Icon = item.icon;

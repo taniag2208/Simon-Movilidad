@@ -10,6 +10,14 @@ import type { FileCategory, FileRecord } from "@/types";
 
 const SHEET_TAB = process.env.GOOGLE_SHEET_TAB || "Historial";
 
+// Hoja de destino del historial (Simón Movilidad · Discovery · Insumos previos).
+// Puede sobreescribirse con GOOGLE_SHEET_ID en el entorno.
+const DEFAULT_SHEET_ID = "1OT9-RYit5ouEiPDGbzQDulvqguZwKguHi93eqqrtqXs";
+
+function sheetId(): string {
+  return process.env.GOOGLE_SHEET_ID || DEFAULT_SHEET_ID;
+}
+
 const SHEET_HEADERS = [
   "Fecha",
   "Hora",
@@ -26,10 +34,10 @@ const SHEET_HEADERS = [
 ];
 
 export function isGoogleConfigured(): boolean {
+  // El Sheet tiene un ID por defecto; solo hacen falta la cuenta de servicio
+  // (para autenticar) y la carpeta de Drive (para guardar los archivos).
   return Boolean(
-    process.env.GOOGLE_SERVICE_ACCOUNT_JSON &&
-      process.env.GOOGLE_DRIVE_FOLDER_ID &&
-      process.env.GOOGLE_SHEET_ID,
+    process.env.GOOGLE_SERVICE_ACCOUNT_JSON && process.env.GOOGLE_DRIVE_FOLDER_ID,
   );
 }
 
@@ -96,7 +104,7 @@ export async function uploadToDrive(
 async function ensureSheetReady() {
   const auth = getAuth();
   const sheets = google.sheets({ version: "v4", auth });
-  const spreadsheetId = process.env.GOOGLE_SHEET_ID as string;
+  const spreadsheetId = sheetId();
 
   const meta = await sheets.spreadsheets.get({ spreadsheetId });
   const exists = meta.data.sheets?.some(

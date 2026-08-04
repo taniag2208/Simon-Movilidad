@@ -17,13 +17,24 @@ export interface PortalUser {
   secret: string;
 }
 
-const DEV_DEFAULT_USERS: PortalUser[] = [
-  { email: "diana@simon.com", name: "Diana", secret: "simon2025" },
+// Equipo del proyecto. Las contraseñas se guardan como hash bcrypt
+// (nunca en texto plano). Se pueden sobreescribir con la variable de entorno
+// PORTAL_USERS sin tocar el código.
+const DEFAULT_USERS: PortalUser[] = [
+  // Cliente · Simón Movilidad
+  { email: "diana.martin@simonmovilidad.com", name: "Diana Martín", secret: "bcrypt$$2a$10$bNWwuKOiU5rwrI8BbuqGH.0zs7GdYwj4QEz5hB3Uwms9hTGr8nkXK" },
+  // Equipo · TITA Media
+  { email: "taniag@titamedia.com", name: "Tania", secret: "bcrypt$$2a$10$eCztQstihGXb/gYBtCbKM.Bgs6/7UyxiiIV5oUBkBVcodYlRPwb7W" },
+  { email: "aurag@titamedia.com", name: "Aura", secret: "bcrypt$$2a$10$eCztQstihGXb/gYBtCbKM.Bgs6/7UyxiiIV5oUBkBVcodYlRPwb7W" },
+  { email: "camilo@titamedia.com", name: "Camilo", secret: "bcrypt$$2a$10$eCztQstihGXb/gYBtCbKM.Bgs6/7UyxiiIV5oUBkBVcodYlRPwb7W" },
+  { email: "alejandrov@titamedia.com", name: "Alejandro", secret: "bcrypt$$2a$10$eCztQstihGXb/gYBtCbKM.Bgs6/7UyxiiIV5oUBkBVcodYlRPwb7W" },
+  { email: "arleyp@titamedia.com", name: "Arley", secret: "bcrypt$$2a$10$eCztQstihGXb/gYBtCbKM.Bgs6/7UyxiiIV5oUBkBVcodYlRPwb7W" },
+  { email: "eugenio@titamedia.com", name: "Eugenio", secret: "bcrypt$$2a$10$eCztQstihGXb/gYBtCbKM.Bgs6/7UyxiiIV5oUBkBVcodYlRPwb7W" },
 ];
 
 function parseUsers(): PortalUser[] {
   const raw = process.env.PORTAL_USERS?.trim();
-  if (!raw) return DEV_DEFAULT_USERS;
+  if (!raw) return DEFAULT_USERS;
 
   const users: PortalUser[] = [];
   for (const entry of raw.split(",")) {
@@ -35,7 +46,7 @@ function parseUsers(): PortalUser[] {
     const secret = parts.slice(2).join(":").trim();
     if (email && name && secret) users.push({ email, name, secret });
   }
-  return users.length ? users : DEV_DEFAULT_USERS;
+  return users.length ? users : DEFAULT_USERS;
 }
 
 /** Valida credenciales. Devuelve el usuario (sin secreto) o null. */
