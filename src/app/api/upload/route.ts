@@ -63,8 +63,13 @@ export async function POST(req: Request) {
     return NextResponse.json({ record });
   } catch (err) {
     console.error("Upload failed:", err);
+    const detail = err instanceof Error ? err.message : "";
     return NextResponse.json(
-      { error: "No fue posible guardar el archivo. Intenta de nuevo." },
+      {
+        error: detail
+          ? `No fue posible guardar el archivo: ${detail}`
+          : "No fue posible guardar el archivo. Intenta de nuevo.",
+      },
       { status: 500 },
     );
   }
