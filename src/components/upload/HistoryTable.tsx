@@ -13,6 +13,8 @@ import {
   File as FileIcon,
   Search,
   Inbox,
+  Trash2,
+  Loader2,
 } from "lucide-react";
 import type { FileRecord } from "@/types";
 import { cn } from "@/lib/cn";
@@ -33,12 +35,26 @@ type Filter = "todos" | "solicitados" | "adicionales";
 export function HistoryTable({
   records,
   loading,
+  onDelete,
 }: {
   records: FileRecord[];
   loading: boolean;
+  onDelete: (id: string) => Promise<void>;
 }) {
   const [filter, setFilter] = useState<Filter>("todos");
   const [query, setQuery] = useState("");
+  const [confirmId, setConfirmId] = useState<string | null>(null);
+  const [deletingId, setDeletingId] = useState<string | null>(null);
+
+  async function handleDelete(id: string) {
+    setDeletingId(id);
+    try {
+      await onDelete(id);
+    } finally {
+      setDeletingId(null);
+      setConfirmId(null);
+    }
+  }
 
   const filtered = useMemo(() => {
     return records.filter((r) => {
@@ -185,8 +201,8 @@ export function HistoryTable({
                     <p className="text-xs text-muted">{r.time}</p>
                   </div>
 
-                  {/* Descarga */}
-                  <div className="lg:text-right">
+                  {/* Acciones */}
+                  <div className="flex items-center gap-2 lg:justify-end">
                     <a
                       href={r.url}
                       target="_blank"
@@ -194,8 +210,40 @@ export function HistoryTable({
                       className="focus-accent inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.02] px-3.5 py-2 text-sm font-medium text-secondary transition-colors hover:border-white/20 hover:text-white"
                     >
                       <Download className="h-4 w-4" />
-                      Descargar
+                      <span className="hidden sm:inline">Descargar</span>
                     </a>
+
+                    {confirmId === r.id ? (
+                      <div className="flex items-center gap-1.5">
+                        <button
+                          onClick={() => handleDelete(r.id)}
+                          disabled={deletingId === r.id}
+                          className="focus-accent inline-flex items-center gap-1.5 rounded-xl border border-red-400/30 bg-red-400/[0.08] px-3 py-2 text-sm font-medium text-red-300 transition-colors hover:bg-red-400/[0.14] disabled:opacity-60"
+                        >
+                          {deletingId === r.id ? (
+                            <Loader2 className="h-4 w-4 animate-spin" />
+                          ) : (
+                            <Trash2 className="h-4 w-4" />
+                          )}
+                          Confirmar
+                        </button>
+                        <button
+                          onClick={() => setConfirmId(null)}
+                          disabled={deletingId === r.id}
+                          className="focus-accent rounded-xl px-2.5 py-2 text-sm text-muted transition-colors hover:text-white"
+                        >
+                          Cancelar
+                        </button>
+                      </div>
+                    ) : (
+                      <button
+                        onClick={() => setConfirmId(r.id)}
+                        aria-label="Eliminar archivo"
+                        className="focus-accent inline-flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/[0.02] text-muted transition-colors hover:border-red-400/30 hover:text-red-300"
+                      >
+                        <Trash2 className="h-4 w-4" />
+                      </button>
+                    )}
                   </div>
                 </motion.div>
               );

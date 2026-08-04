@@ -1,11 +1,13 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { FileStack, Lightbulb, History } from "lucide-react";
+import { FileStack, Lightbulb, History, ListChecks } from "lucide-react";
 import type { FileRecord } from "@/types";
+import { insumos } from "@data/insumos";
 import { Reveal } from "@/components/ui/Reveal";
 import { UploadCard } from "@/components/upload/UploadCard";
 import { HistoryTable } from "@/components/upload/HistoryTable";
+import { InsumosChecklist } from "@/components/upload/InsumosChecklist";
 
 export function CargarWorkspace() {
   const [records, setRecords] = useState<FileRecord[]>([]);
@@ -31,6 +33,13 @@ export function CargarWorkspace() {
     setRecords((prev) => [record, ...prev]);
   }, []);
 
+  const onDelete = useCallback(async (id: string) => {
+    const res = await fetch(`/api/files/${id}`, { method: "DELETE" });
+    if (res.ok) {
+      setRecords((prev) => prev.filter((r) => r.id !== id));
+    }
+  }, []);
+
   return (
     <div className="mx-auto w-full max-w-content">
       <Reveal>
@@ -40,7 +49,7 @@ export function CargarWorkspace() {
             Cargar información
           </h1>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-secondary">
-            Entrega los documentos del proyecto y comparte cualquier información adicional
+            Entrega los insumos del proyecto y comparte cualquier información adicional
             que aporte contexto. Todo queda registrado automáticamente.
           </p>
         </header>
@@ -54,11 +63,12 @@ export function CargarWorkspace() {
             accent="accent"
             eyebrow="Bloque 1"
             title="Documentos solicitados"
-            description="Carga aquí cualquier documento que hayamos pedido durante el proyecto."
+            description="Elige el insumo que estás entregando y súbelo. Puedes ver el listado completo abajo."
             icon={<FileStack className="h-6 w-6" />}
-            nameLabel="Nombre del documento"
+            nameLabel="Insumo"
             descLabel="Descripción"
             submitLabel="Subir documento"
+            options={insumos}
             onUploaded={onUploaded}
           />
         </Reveal>
@@ -79,8 +89,24 @@ export function CargarWorkspace() {
         </Reveal>
       </div>
 
-      {/* Historial */}
+      {/* Listado de insumos (checklist) */}
       <Reveal delay={0.16}>
+        <div className="mt-16">
+          <div className="mb-6 flex items-center gap-3">
+            <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] text-secondary">
+              <ListChecks className="h-[18px] w-[18px]" />
+            </span>
+            <div>
+              <h2 className="text-xl font-semibold tracking-tight text-white">Listado de insumos</h2>
+              <p className="text-sm text-muted">Qué se solicitó y qué ya fue entregado.</p>
+            </div>
+          </div>
+          <InsumosChecklist records={records} />
+        </div>
+      </Reveal>
+
+      {/* Historial */}
+      <Reveal delay={0.2}>
         <div className="mt-16">
           <div className="mb-6 flex items-center gap-3">
             <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] text-secondary">
@@ -93,7 +119,7 @@ export function CargarWorkspace() {
               </p>
             </div>
           </div>
-          <HistoryTable records={records} loading={loading} />
+          <HistoryTable records={records} loading={loading} onDelete={onDelete} />
         </div>
       </Reveal>
     </div>

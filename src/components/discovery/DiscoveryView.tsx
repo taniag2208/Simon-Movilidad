@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Compass, HelpCircle, Sparkle } from "lucide-react";
+import { Compass, HelpCircle } from "lucide-react";
 import { discoveryBlocks, discoveryStats } from "@data/discovery";
 import { Reveal } from "@/components/ui/Reveal";
 import { DiscoveryBlockSection } from "@/components/discovery/DiscoveryBlock";
@@ -30,23 +30,14 @@ export function DiscoveryView() {
       {/* Resumen + índice */}
       <Reveal delay={0.08}>
         <div className="mt-10 flex flex-wrap items-center gap-3">
-          <span className="inline-flex items-center gap-2 rounded-2xl border border-white/[0.07] bg-white/[0.025] px-4 py-2.5 text-sm">
-            <span className="font-semibold text-white">{discoveryStats.total}</span>
-            <span className="text-muted">preguntas por resolver</span>
-          </span>
           <span className="inline-flex items-center gap-2 rounded-2xl border border-accent/20 bg-accent/[0.06] px-4 py-2.5 text-sm">
             <HelpCircle className="h-4 w-4 text-accent" />
-            <span className="font-semibold text-white">{discoveryStats.open}</span>
-            <span className="text-secondary">abiertas</span>
-          </span>
-          <span className="inline-flex items-center gap-2 rounded-2xl border border-cyan/20 bg-cyan/[0.06] px-4 py-2.5 text-sm">
-            <Sparkle className="h-4 w-4 text-cyan" />
-            <span className="font-semibold text-white">{discoveryStats.partial}</span>
-            <span className="text-secondary">parciales</span>
+            <span className="font-semibold text-white">{discoveryStats.total}</span>
+            <span className="text-secondary">preguntas por resolver</span>
           </span>
           <span className="inline-flex items-center gap-2 rounded-2xl border border-white/[0.07] bg-white/[0.025] px-4 py-2.5 text-sm">
             <span className="font-semibold text-white">{discoveryStats.blocks}</span>
-            <span className="text-muted">bloques</span>
+            <span className="text-muted">bloques temáticos</span>
           </span>
         </div>
       </Reveal>

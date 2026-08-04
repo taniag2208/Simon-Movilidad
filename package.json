@@ -14,7 +14,6 @@
     "clsx": "2.1.1",
     "eslint-config-next": "^14.2.35",
     "framer-motion": "11.11.9",
-    "googleapis": "144.0.0",
     "jose": "5.9.4",
     "lucide-react": "0.451.0",
     "next": "^14.2.35",

@@ -11,7 +11,7 @@ oscuro, premium, con lenguaje visual inspirado en Linear, Vercel, Stripe y Notio
 - **Tailwind CSS** — sistema de diseño con la paleta Evidence Engine
 - **Framer Motion** — microanimaciones (fade, blur, scale, slide, hover)
 - **Lucide Icons** — iconografía minimalista
-- **Google Drive + Sheets** (cuenta de servicio) para persistencia real
+- **Google Drive + Sheets** vía **Apps Script** (sin cuenta de servicio)
 - **jose** (sesión JWT httpOnly) + **bcryptjs** para autenticación
 
 ## Estructura
@@ -27,13 +27,15 @@ src/
     api/
       auth/                login · logout · session
       upload/              guarda en Drive+Sheets (o local) y registra fila
-      files/               historial (más reciente primero)
+      files/               historial (GET) · files/[id] (DELETE)
       download/[id]/       descarga en modo local
   components/  ui · layout · auth · home · upload · discovery
-  lib/         auth · users · google · storage · fileTypes · cn
+  lib/         auth · users · appsScript · storage · fileTypes · cn
   types/
-data/discovery.ts          datos generados del Excel (solo ABIERTA/PARCIAL)
+data/discovery.ts          preguntas generadas del Excel (solo ABIERTA/PARCIAL)
+data/insumos.ts            listado de insumos (pestaña "Insumos previos")
 scripts/parse-discovery.mjs convierte el Excel → data/discovery.ts
+google-apps-script/Code.gs backend Apps Script (Drive + Sheet: upload/list/delete)
 ```
 
 ## Puesta en marcha
@@ -44,15 +46,32 @@ cp .env.local.example .env.local   # completa las variables
 npm run dev                        # http://localhost:3000
 ```
 
-### Modo local vs. Google
+### Persistencia: Apps Script (Drive + Sheets)
 
-- **Sin credenciales de Google** el portal funciona en *modo local*: los
-  archivos se guardan en `./.data` y el historial en un JSON. Ideal para
-  desarrollo y demo. La app corre completa desde el primer minuto.
-- **Con credenciales** (ver `.env.local.example`) cada archivo se sube a
-  **Google Drive** y se registra automáticamente una fila en **Google Sheets**
-  con: Fecha, Hora, Usuario, Correo, Nombre, Descripción, Nombre del archivo,
-  Tipo, URL y Categoría. El cambio es transparente para la interfaz.
+No se usa cuenta de servicio. El backend es un **Google Apps Script** ligado a
+la hoja de cálculo, publicado como *Aplicación web*.
+
+**Despliegue del backend:**
+
+1. Abre la Google Sheet → **Extensiones → Apps Script**.
+2. Pega el contenido de [`google-apps-script/Code.gs`](google-apps-script/Code.gs)
+   y cambia la constante `TOKEN` por un secreto propio.
+3. **Implementar → Nueva implementación → Aplicación web**
+   - *Ejecutar como:* **Yo**
+   - *Quién tiene acceso:* **Cualquier usuario**
+4. Copia la **URL `/exec`** y configúrala en las variables de entorno:
+   - `APPS_SCRIPT_URL` = la URL `/exec`
+   - `APPS_SCRIPT_TOKEN` = el mismo `TOKEN` del script
+
+Con eso, cada archivo se guarda en una carpeta de **Drive** y se registra una
+fila en la hoja **Historial** con: Fecha, Hora, Usuario, Correo, Nombre,
+Descripción, Nombre del archivo, Tipo, URL y Categoría. El historial también se
+puede **eliminar** desde el portal (borra la fila y envía el archivo a la
+papelera).
+
+- **Sin `APPS_SCRIPT_URL`** el portal funciona en *modo local* (`./.data`),
+  útil para desarrollo. En Vercel este modo **no persiste**, así que en
+  producción define siempre las variables de Apps Script.
 
 ### Usuarios
 
@@ -75,8 +94,11 @@ Reglas aplicadas automáticamente:
 - Solo se muestran preguntas **ABIERTA** (○) y **PARCIAL** (◑).
 - Se ocultan las **RESPONDIDA** (✔) y los campos internos (estado, respondido
   por, follow-up, variables).
-- Se muestra únicamente **Bloque**, **Pregunta** y, cuando existen, las notas
-  del kickoff dentro de la caja *"Lo que ya sabemos"*.
+- Se muestra únicamente **Bloque** y **Pregunta**, sin exponer el estado de
+  cada pregunta.
+
+El listado de la página **Cargar información** proviene de la pestaña
+`Insumos previos` del mismo archivo (`data/insumos.ts`).
 
 > El Excel de origen es confidencial y **no** se versiona (`/private` está en
 > `.gitignore`). Lo que se versiona es `data/discovery.ts`, el contenido ya

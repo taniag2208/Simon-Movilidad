@@ -5,9 +5,6 @@ import type { DiscoveryBlock as Block } from "@/types";
 import { QuestionCard } from "@/components/discovery/QuestionCard";
 
 export function DiscoveryBlockSection({ block, index }: { block: Block; index: number }) {
-  const openCount = block.questions.filter((q) => q.status === "ABIERTA").length;
-  const partialCount = block.questions.length - openCount;
-
   return (
     <section id={block.id} className="scroll-mt-24">
       {/* Cabecera editorial del bloque */}
@@ -32,15 +29,7 @@ export function DiscoveryBlockSection({ block, index }: { block: Block; index: n
           {block.title}
         </h2>
         <p className="mt-3 text-sm text-muted">
-          {block.questions.length} {block.questions.length === 1 ? "pregunta" : "preguntas"}
-          {" · "}
-          {openCount > 0 && (
-            <span className="text-accent">{openCount} abierta{openCount === 1 ? "" : "s"}</span>
-          )}
-          {openCount > 0 && partialCount > 0 && " · "}
-          {partialCount > 0 && (
-            <span className="text-cyan">{partialCount} parcial{partialCount === 1 ? "" : "es"}</span>
-          )}
+          {block.questions.length} {block.questions.length === 1 ? "pregunta por resolver" : "preguntas por resolver"}
         </p>
       </motion.header>
 

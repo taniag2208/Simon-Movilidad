@@ -2,13 +2,15 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { CheckCircle2, RotateCcw } from "lucide-react";
-import type { FileRecord } from "@/types";
+import { CheckCircle2, RotateCcw, ChevronDown } from "lucide-react";
+import type { FileRecord, Insumo } from "@/types";
 import { Input, Textarea } from "@/components/ui/Field";
 import { Button } from "@/components/ui/Button";
 import { Dropzone } from "@/components/upload/Dropzone";
 import { useUpload } from "@/components/upload/useUpload";
 import { cn } from "@/lib/cn";
+
+const OTHER = "__otro__";
 
 interface UploadCardProps {
   category: "solicitados" | "adicionales";
@@ -20,6 +22,8 @@ interface UploadCardProps {
   nameLabel: string;
   descLabel: string;
   accent?: "accent" | "cyan";
+  /** Si se pasan, el nombre se elige de esta lista de insumos. */
+  options?: Insumo[];
   onUploaded: (record: FileRecord) => void;
 }
 
@@ -33,9 +37,11 @@ export function UploadCard({
   nameLabel,
   descLabel,
   accent = "accent",
+  options,
   onUploaded,
 }: UploadCardProps) {
   const [name, setName] = useState("");
+  const [selected, setSelected] = useState(""); // valor del <select> de insumos
   const [desc, setDesc] = useState("");
   const [file, setFile] = useState<File | null>(null);
   const [formError, setFormError] = useState<string | null>(null);
@@ -46,6 +52,7 @@ export function UploadCard({
 
   const uploading = status === "uploading";
   const success = status === "success";
+  const selectedInsumo = options?.find((o) => o.title === selected) ?? null;
 
   function submit(e: React.FormEvent) {
     e.preventDefault();
@@ -63,6 +70,7 @@ export function UploadCard({
 
   function startOver() {
     setName("");
+    setSelected("");
     setDesc("");
     setFile(null);
     setFormError(null);
@@ -122,14 +130,67 @@ export function UploadCard({
               onSubmit={submit}
               className="space-y-5"
             >
-              <Input
-                label={nameLabel}
-                required
-                placeholder="Ej. Diagrama de arquitectura de la app"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                disabled={uploading}
-              />
+              {options ? (
+                <div>
+                  <label className="mb-2 block text-sm font-medium text-secondary">
+                    {nameLabel}
+                    <span className="ml-1 text-accent">*</span>
+                  </label>
+                  <div className="relative">
+                    <select
+                      value={selected}
+                      disabled={uploading}
+                      onChange={(e) => {
+                        const v = e.target.value;
+                        setSelected(v);
+                        setName(v === OTHER ? "" : v);
+                      }}
+                      className="focus-accent h-12 w-full appearance-none rounded-2xl border border-white/10 bg-white/[0.03] pl-4 pr-11 text-[15px] text-white transition-colors hover:border-white/20"
+                    >
+                      <option value="" disabled className="bg-surface text-white">
+                        Selecciona el insumo…
+                      </option>
+                      {options.map((o) => (
+                        <option key={o.id} value={o.title} className="bg-surface text-white">
+                          {o.number}. {o.title}
+                        </option>
+                      ))}
+                      <option value={OTHER} className="bg-surface text-white">
+                        Otro (especificar)
+                      </option>
+                    </select>
+                    <ChevronDown className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted" />
+                  </div>
+
+                  {selectedInsumo && (
+                    <p className="mt-2 rounded-xl border border-white/[0.06] bg-white/[0.02] px-3.5 py-2.5 text-xs leading-relaxed text-muted">
+                      {selectedInsumo.detail}
+                    </p>
+                  )}
+
+                  {selected === OTHER && (
+                    <div className="mt-3">
+                      <Input
+                        placeholder="Escribe el nombre del documento"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        disabled={uploading}
+                        autoFocus
+                      />
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Input
+                  label={nameLabel}
+                  required
+                  placeholder="Ej. Diagrama de arquitectura de la app"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  disabled={uploading}
+                />
+              )}
+
               <Textarea
                 label={descLabel}
                 required

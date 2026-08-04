@@ -36,3 +36,11 @@ export interface SessionUser {
   email: string;
   name: string;
 }
+
+/** Un insumo solicitado (pestaña "Insumos previos" del archivo). */
+export interface Insumo {
+  id: string;
+  number: number;
+  title: string;
+  detail: string;
+}

@@ -4,17 +4,17 @@ import path from "node:path";
 import { randomUUID } from "node:crypto";
 import type { FileRecord } from "@/types";
 import {
-  isGoogleConfigured,
-  uploadToDrive,
-  appendToSheet,
-  readSheet,
-} from "@/lib/google";
+  isAppsScriptConfigured,
+  uploadViaAppsScript,
+  listViaAppsScript,
+  deleteViaAppsScript,
+} from "@/lib/appsScript";
 
 /**
  * Capa de persistencia unificada.
- *  - Si Google está configurado → Drive (archivos) + Sheets (historial).
- *  - Si no → almacenamiento LOCAL en ./.data (para desarrollo/demo).
- * En ambos casos la API pública es idéntica, así la UI no cambia.
+ *  - Si APPS_SCRIPT_URL está configurado → Google Drive + Sheets vía Apps Script.
+ *  - Si no → almacenamiento LOCAL en ./.data (solo desarrollo/demo).
+ * La API pública es idéntica en ambos casos, así la UI no cambia.
  */
 
 const DATA_DIR = path.join(process.cwd(), ".data");
@@ -53,7 +53,6 @@ export interface SaveInput {
 
 function nowParts() {
   const now = new Date();
-  // Zona horaria de Colombia para fecha/hora legibles.
   const fmt = new Intl.DateTimeFormat("es-CO", {
     timeZone: "America/Bogota",
     year: "numeric",
@@ -63,9 +62,7 @@ function nowParts() {
     minute: "2-digit",
     hour12: false,
   });
-  const parts = Object.fromEntries(
-    fmt.formatToParts(now).map((p) => [p.type, p.value]),
-  );
+  const parts = Object.fromEntries(fmt.formatToParts(now).map((p) => [p.type, p.value]));
   return {
     date: `${parts.year}-${parts.month}-${parts.day}`,
     time: `${parts.hour}:${parts.minute}`,
@@ -74,19 +71,26 @@ function nowParts() {
 }
 
 export async function saveFile(input: SaveInput): Promise<FileRecord> {
+  if (isAppsScriptConfigured()) {
+    return uploadViaAppsScript({
+      buffer: input.buffer,
+      fileName: input.originalName,
+      mimeType: input.mimeType,
+      fileType: input.fileType,
+      name: input.name,
+      description: input.description,
+      category: input.category,
+      user: input.user,
+      email: input.email,
+    });
+  }
+
+  // Modo local
   const { date, time, isoTimestamp } = nowParts();
   const id = randomUUID();
-
-  let url: string;
-  if (isGoogleConfigured()) {
-    const drive = await uploadToDrive(input.buffer, input.originalName, input.mimeType);
-    url = drive.url;
-  } else {
-    await ensureLocalDirs();
-    const safe = input.originalName.replace(/[^\w.\-]+/g, "_");
-    await fs.writeFile(path.join(FILES_DIR, `${id}__${safe}`), input.buffer);
-    url = `/api/download/${id}`;
-  }
+  await ensureLocalDirs();
+  const safe = input.originalName.replace(/[^\w.\-]+/g, "_");
+  await fs.writeFile(path.join(FILES_DIR, `${id}__${safe}`), input.buffer);
 
   const record: FileRecord = {
     id,
@@ -99,30 +103,43 @@ export async function saveFile(input: SaveInput): Promise<FileRecord> {
     description: input.description,
     fileName: input.originalName,
     fileType: input.fileType,
-    url,
+    url: `/api/download/${id}`,
     category: input.category,
   };
-
-  if (isGoogleConfigured()) {
-    await appendToSheet(record);
-  } else {
-    const history = await readLocalHistory();
-    history.push(record);
-    await writeLocalHistory(history);
-  }
-
+  const history = await readLocalHistory();
+  history.push(record);
+  await writeLocalHistory(history);
   return record;
 }
 
 export async function listFiles(): Promise<FileRecord[]> {
-  if (isGoogleConfigured()) {
-    return readSheet();
+  if (isAppsScriptConfigured()) {
+    return listViaAppsScript();
   }
   const history = await readLocalHistory();
   return history.sort((a, b) => (a.isoTimestamp < b.isoTimestamp ? 1 : -1));
 }
 
-/** Solo modo local: recupera la ruta física de un archivo por id. */
+export async function deleteFile(id: string): Promise<boolean> {
+  if (isAppsScriptConfigured()) {
+    await deleteViaAppsScript(id);
+    return true;
+  }
+  // Modo local: quita del historial y borra el archivo físico.
+  const history = await readLocalHistory();
+  const record = history.find((r) => r.id === id);
+  if (!record) return false;
+  await writeLocalHistory(history.filter((r) => r.id !== id));
+  try {
+    const safe = record.fileName.replace(/[^\w.\-]+/g, "_");
+    await fs.unlink(path.join(FILES_DIR, `${id}__${safe}`));
+  } catch {
+    /* el archivo pudo no existir; el registro ya se eliminó */
+  }
+  return true;
+}
+
+/** Solo modo local: recupera el archivo físico por id para descarga. */
 export async function getLocalFile(
   id: string,
 ): Promise<{ buffer: Buffer; record: FileRecord } | null> {
@@ -137,5 +154,3 @@ export async function getLocalFile(
     return null;
   }
 }
-
-export const usingGoogle = isGoogleConfigured;
