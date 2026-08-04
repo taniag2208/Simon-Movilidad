@@ -55,15 +55,31 @@ export function CargarWorkspace() {
         </header>
       </Reveal>
 
-      {/* Dos bloques */}
-      <div className="mt-12 grid gap-6 lg:grid-cols-2">
-        <Reveal delay={0.06}>
+      {/* 1) Listado de insumos (checklist) — primero */}
+      <Reveal delay={0.06}>
+        <div className="mt-12">
+          <div className="mb-6 flex items-center gap-3">
+            <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] text-secondary">
+              <ListChecks className="h-[18px] w-[18px]" />
+            </span>
+            <div>
+              <h2 className="text-xl font-semibold tracking-tight text-white">Listado de insumos</h2>
+              <p className="text-sm text-muted">Qué se solicitó y qué ya fue entregado.</p>
+            </div>
+          </div>
+          <InsumosChecklist records={records} />
+        </div>
+      </Reveal>
+
+      {/* 2) Bloques de carga — después */}
+      <div className="mt-16 grid gap-6 lg:grid-cols-2">
+        <Reveal delay={0.1}>
           <UploadCard
             category="solicitados"
             accent="accent"
             eyebrow="Bloque 1"
             title="Documentos solicitados"
-            description="Elige el insumo que estás entregando y súbelo. Puedes ver el listado completo abajo."
+            description="Elige el insumo que estás entregando (del listado de arriba) y súbelo."
             icon={<FileStack className="h-6 w-6" />}
             nameLabel="Insumo"
             descLabel="Descripción"
@@ -73,7 +89,7 @@ export function CargarWorkspace() {
           />
         </Reveal>
 
-        <Reveal delay={0.12}>
+        <Reveal delay={0.16}>
           <UploadCard
             category="adicionales"
             accent="cyan"
@@ -88,22 +104,6 @@ export function CargarWorkspace() {
           />
         </Reveal>
       </div>
-
-      {/* Listado de insumos (checklist) */}
-      <Reveal delay={0.16}>
-        <div className="mt-16">
-          <div className="mb-6 flex items-center gap-3">
-            <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] text-secondary">
-              <ListChecks className="h-[18px] w-[18px]" />
-            </span>
-            <div>
-              <h2 className="text-xl font-semibold tracking-tight text-white">Listado de insumos</h2>
-              <p className="text-sm text-muted">Qué se solicitó y qué ya fue entregado.</p>
-            </div>
-          </div>
-          <InsumosChecklist records={records} />
-        </div>
-      </Reveal>
 
       {/* Historial */}
       <Reveal delay={0.2}>

@@ -5,10 +5,10 @@
 import type { DiscoveryBlock } from "@/types";
 
 export const discoveryStats = {
-  blocks: 14,
-  open: 56,
+  blocks: 13,
+  open: 53,
   partial: 16,
-  total: 72,
+  total: 69,
 };
 
 export const discoveryBlocks: DiscoveryBlock[] = [
@@ -356,31 +356,6 @@ export const discoveryBlocks: DiscoveryBlock[] = [
       {
         "id": "7-criterios-de-exito-y-decision-5",
         "question": "¿Cómo prefieren recibir la recomendación final — priorizada por potencial de negocio, por facilidad de implementación técnica, o ambas ponderadas?",
-        "status": "ABIERTA",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "cierre-de-sesion",
-    "number": null,
-    "title": "Cierre de sesión",
-    "questions": [
-      {
-        "id": "cierre-de-sesion-1",
-        "question": "¿Hay algo que no les hayamos preguntado y que consideren que deberíamos saber antes de empezar a investigar?",
-        "status": "ABIERTA",
-        "notes": null
-      },
-      {
-        "id": "cierre-de-sesion-2",
-        "question": "¿Hay estudios previos, consultorías anteriores o análisis internos sobre este mismo tema que puedan compartirnos?",
-        "status": "ABIERTA",
-        "notes": null
-      },
-      {
-        "id": "cierre-de-sesion-3",
-        "question": "Confirmar disponibilidad de Javier / Diana para preguntas de seguimiento asíncronas durante la fase de investigación (canal de consulta puntual, no nueva sesión).",
         "status": "ABIERTA",
         "notes": null
       }

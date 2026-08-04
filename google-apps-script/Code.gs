@@ -1,32 +1,22 @@
 /**
  * Evidence Engine · Backend Apps Script para Simón Movilidad
  * ---------------------------------------------------------------------------
- * Este script se pega en el editor de Apps Script LIGADO a la hoja de cálculo
- * (Extensiones → Apps Script) y se publica como Aplicación web.
- *
- * Hace tres cosas para el portal:
- *   - upload : guarda el archivo en una carpeta de Drive y registra la fila.
- *   - list   : devuelve todo el historial (más reciente primero).
- *   - delete : elimina la fila del historial y envía el archivo a la papelera.
- *
- * PASOS DE PUBLICACIÓN (ver README):
- *   1. Cambia TOKEN por un secreto propio (el mismo que pondrás en Vercel
- *      como APPS_SCRIPT_TOKEN).
- *   2. Implementar → Nueva implementación → Aplicación web.
- *        · Ejecutar como: Yo
- *        · Quién tiene acceso: Cualquier usuario
- *   3. Copia la URL /exec y ponla en Vercel como APPS_SCRIPT_URL.
+ * Guarda el archivo en una carpeta de Drive y registra una fila legible en la
+ * hoja "Historial". Columnas visibles (limpias):
+ *   Fecha · Hora · Usuario · Correo · Documento / Insumo · Descripción ·
+ *   Archivo · Tipo · Enlace
+ * (No se guardan columnas técnicas de categoría, id ni marca de tiempo ISO.)
  * ---------------------------------------------------------------------------
  */
 
-// ⚠️ Cambia este valor y usa el MISMO en Vercel (APPS_SCRIPT_TOKEN).
-var TOKEN = "CAMBIA_ESTE_TOKEN";
+// Token de seguridad — debe coincidir con el del portal.
+var TOKEN = "kVr2uUTJf2Ny6AosEleEWZkHHPZFj4X5";
 
 var SHEET_NAME = "Historial";
 var FOLDER_NAME = "Evidence Engine · Archivos Simón Movilidad";
 var HEADERS = [
-  "Fecha", "Hora", "Usuario", "Correo", "Nombre", "Descripción",
-  "Nombre del archivo", "Tipo", "URL del archivo", "Categoría", "id", "isoTimestamp",
+  "Fecha", "Hora", "Usuario", "Correo", "Documento / Insumo",
+  "Descripción", "Archivo", "Tipo", "Enlace",
 ];
 
 function doGet(e) { return handle(e); }
@@ -64,7 +54,11 @@ function getSheet() {
   var sh = ss.getSheetByName(SHEET_NAME);
   if (!sh) {
     sh = ss.insertSheet(SHEET_NAME);
-    sh.appendRow(HEADERS);
+  }
+  // Asegura los encabezados limpios en la fila 1.
+  var first = sh.getRange(1, 1).getValue();
+  if (first !== HEADERS[0]) {
+    sh.getRange(1, 1, 1, HEADERS.length).setValues([HEADERS]);
     sh.setFrozenRows(1);
   }
   return sh;
@@ -74,6 +68,11 @@ function getFolder() {
   var it = DriveApp.getFoldersByName(FOLDER_NAME);
   if (it.hasNext()) return it.next();
   return DriveApp.createFolder(FOLDER_NAME);
+}
+
+function driveIdFromUrl(url) {
+  var m = String(url).match(/[-\w]{25,}/);
+  return m ? m[0] : "";
 }
 
 function uploadFile(p) {
@@ -88,19 +87,19 @@ function uploadFile(p) {
   var now = new Date();
   var date = Utilities.formatDate(now, tz, "yyyy-MM-dd");
   var time = Utilities.formatDate(now, tz, "HH:mm");
-  var iso = now.toISOString();
-  var id = Utilities.getUuid();
-  var categoryLabel = p.category === "adicionales" ? "Archivos adicionales" : "Documentos solicitados";
+  var url = file.getUrl();
 
+  // Fila legible (9 columnas).
   getSheet().appendRow([
-    date, time, p.user, p.email, p.name, p.description,
-    p.fileName, p.fileType, file.getUrl(), categoryLabel, id, iso,
+    date, time, p.user, p.email, p.name, p.description, p.fileName, p.fileType, url,
   ]);
 
+  // El portal necesita estos campos en memoria (no se guardan en la hoja).
   return {
-    id: id, date: date, time: time, isoTimestamp: iso,
+    id: file.getId(),
+    date: date, time: time, isoTimestamp: date + "T" + time,
     user: p.user, email: p.email, name: p.name, description: p.description,
-    fileName: p.fileName, fileType: p.fileType, url: file.getUrl(),
+    fileName: p.fileName, fileType: p.fileType, url: url,
     category: p.category === "adicionales" ? "adicionales" : "solicitados",
   };
 }
@@ -110,12 +109,14 @@ function listRecords() {
   var out = [];
   for (var i = 1; i < data.length; i++) {
     var r = data[i];
-    if (!r[10]) continue; // sin id → fila incompleta
+    var url = r[8];
+    if (!url) continue;
     out.push({
-      date: r[0], time: r[1], user: r[2], email: r[3], name: r[4], description: r[5],
-      fileName: r[6], fileType: r[7], url: r[8],
-      category: String(r[9]).toLowerCase().indexOf("adicional") >= 0 ? "adicionales" : "solicitados",
-      id: r[10], isoTimestamp: r[11],
+      date: r[0], time: r[1], user: r[2], email: r[3], name: r[4],
+      description: r[5], fileName: r[6], fileType: r[7], url: url,
+      id: driveIdFromUrl(url) || ("row-" + i),
+      isoTimestamp: String(r[0]) + "T" + String(r[1]),
+      category: "solicitados", // el portal ajusta según el nombre
     });
   }
   out.sort(function (a, b) { return a.isoTimestamp < b.isoTimestamp ? 1 : -1; });
@@ -126,11 +127,8 @@ function deleteRecord(id) {
   var sh = getSheet();
   var data = sh.getDataRange().getValues();
   for (var i = 1; i < data.length; i++) {
-    if (String(data[i][10]) === String(id)) {
-      try {
-        var m = String(data[i][8]).match(/[-\w]{25,}/); // id de Drive dentro de la URL
-        if (m) DriveApp.getFileById(m[0]).setTrashed(true);
-      } catch (err) { /* si no se puede borrar el archivo, igual quitamos la fila */ }
+    if (driveIdFromUrl(data[i][8]) === String(id)) {
+      try { DriveApp.getFileById(String(id)).setTrashed(true); } catch (err) {}
       sh.deleteRow(i + 1);
       return { ok: true };
     }

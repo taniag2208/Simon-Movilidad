@@ -94,6 +94,9 @@ for (let i = DATA_START; i < rows.length; i++) {
   const blockRaw = String(row[COL._bloque] || row[COL.bloque] || "").trim();
   if (!blockRaw) continue;
 
+  // Excluir el bloque de preguntas de cierre.
+  if (/cierre/i.test(blockRaw)) continue;
+
   if (!blocksMap.has(blockRaw)) {
     const { number, title } = parseBlock(blockRaw);
     const block = { id: slug(blockRaw), number, title, questions: [] };

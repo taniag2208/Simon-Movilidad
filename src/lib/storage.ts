@@ -9,6 +9,14 @@ import {
   listViaAppsScript,
   deleteViaAppsScript,
 } from "@/lib/appsScript";
+import { insumos } from "@data/insumos";
+
+// La categoría ya no se guarda en la hoja: se deduce del nombre del documento.
+// Si el nombre coincide con un insumo solicitado → "solicitados"; si no → "adicionales".
+const insumoTitles = new Set(insumos.map((i) => i.title.trim().toLowerCase()));
+function deriveCategory(name: string): FileRecord["category"] {
+  return insumoTitles.has((name || "").trim().toLowerCase()) ? "solicitados" : "adicionales";
+}
 
 /**
  * Capa de persistencia unificada.
@@ -114,7 +122,8 @@ export async function saveFile(input: SaveInput): Promise<FileRecord> {
 
 export async function listFiles(): Promise<FileRecord[]> {
   if (isAppsScriptConfigured()) {
-    return listViaAppsScript();
+    const records = await listViaAppsScript();
+    return records.map((r) => ({ ...r, category: deriveCategory(r.name) }));
   }
   const history = await readLocalHistory();
   return history.sort((a, b) => (a.isoTimestamp < b.isoTimestamp ? 1 : -1));
