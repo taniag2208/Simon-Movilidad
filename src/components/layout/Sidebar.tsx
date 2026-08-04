@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { Home, UploadCloud, Compass } from "lucide-react";
+import { TitaMediaLogo } from "@/components/ui/TitaMediaLogo";
 import { cn } from "@/lib/cn";
 
 const NAV = [
@@ -51,9 +52,9 @@ export function Sidebar() {
 
       <div className="mt-auto px-3">
         <div className="rounded-2xl border border-white/[0.06] bg-white/[0.02] p-4">
-          <p className="text-xs font-medium text-secondary">Research Operating System</p>
-          <p className="mt-1 text-[11px] leading-relaxed text-faint">
-            Centro colaborativo de evidencia · TITA Media
+          <TitaMediaLogo size="sm" />
+          <p className="mt-2 text-[11px] leading-relaxed text-faint">
+            Centro colaborativo de evidencia · Tita Media
           </p>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { ArrowRight, Lock, Mail, ShieldCheck } from "lucide-react";
-import { Logo } from "@/components/ui/Logo";
+import { TitaMediaLogo } from "@/components/ui/TitaMediaLogo";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Field";
 
@@ -56,7 +56,7 @@ export function LoginForm() {
         className="relative z-10 w-full max-w-md"
       >
         <div className="mb-10 flex justify-center">
-          <Logo />
+          <TitaMediaLogo size="lg" />
         </div>
 
         <div className="mb-8 text-center">
