@@ -1,0 +1,36 @@
+{
+  "name": "evidence-engine",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "parse:discovery": "node scripts/parse-discovery.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "clsx": "2.1.1",
+    "eslint-config-next": "^14.2.35",
+    "framer-motion": "11.11.9",
+    "googleapis": "144.0.0",
+    "jose": "5.9.4",
+    "lucide-react": "0.451.0",
+    "next": "^14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "2.4.6",
+    "@types/node": "20.16.11",
+    "@types/react": "18.3.11",
+    "@types/react-dom": "18.3.0",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.47",
+    "tailwindcss": "3.4.13",
+    "typescript": "5.6.3",
+    "xlsx": "0.18.5"
+  }
+}
