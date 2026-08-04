@@ -1,10 +1,6 @@
 import { cn } from "@/lib/cn";
 
-/**
- * Marca de Tita Media.
- * Por ahora es un wordmark en texto; cuando exista el archivo del logo real
- * se reemplaza el contenido por <img src="/tita-media.svg" ... />.
- */
+/** Logo oficial de Tita Media (wordmark blanco, fondo transparente). */
 export function TitaMediaLogo({
   className,
   size = "md",
@@ -12,15 +8,15 @@ export function TitaMediaLogo({
   className?: string;
   size?: "sm" | "md" | "lg";
 }) {
-  const text =
-    size === "lg" ? "text-2xl" : size === "sm" ? "text-[13px]" : "text-base";
-  const dot = size === "lg" ? "h-2 w-2" : "h-1.5 w-1.5";
+  const width = size === "lg" ? 230 : size === "sm" ? 128 : 168;
   return (
-    <div className={cn("inline-flex items-center gap-2.5", className)}>
-      <span className={cn("rounded-full bg-accent", dot)} />
-      <span className={cn("font-semibold tracking-tight text-white", text)}>
-        Tita <span className="text-accent">Media</span>
-      </span>
-    </div>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src="/tita-media.png"
+      alt="Tita Media · Outstanding Performance"
+      width={width}
+      style={{ width }}
+      className={cn("h-auto select-none", className)}
+    />
   );
 }
