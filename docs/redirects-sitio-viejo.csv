@@ -1,0 +1,10 @@
+url_vieja,url_nueva,tipo,notas
+/nosotros,/pages/nosotros,301,Página institucional
+/contacto,/pages/contacto,301,Formulario de contacto
+/blog,/blogs/noticias,301,Listado del blog (usar /blogs/news si el blog no se ha renombrado)
+/productos,/collections,301,Catálogo general
+/productos/linea-carnica,/collections/linea-carnica,301,EJEMPLO: categoría cárnica del sitio viejo (confirmar URL real)
+/productos/panaderia,/collections/linea-panaderia,301,EJEMPLO: categoría de panadería del sitio viejo (confirmar URL real)
+/categoria-producto/EJEMPLO,/collections/EJEMPLO,301,PENDIENTE: una fila por categoría del sitio viejo
+/producto/EJEMPLO,/products/EJEMPLO,301,PENDIENTE: una fila por producto del sitio viejo
+/AAAA/MM/DD/EJEMPLO-ENTRADA,/blogs/noticias/EJEMPLO-ARTICULO,301,PENDIENTE: una fila por entrada del blog viejo
