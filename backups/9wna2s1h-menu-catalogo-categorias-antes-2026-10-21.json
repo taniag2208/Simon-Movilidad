@@ -1,0 +1,323 @@
+{
+ "id": "gid://shopify/Menu/323537076587",
+ "title": "Catálogo Technofood - Categorías",
+ "handle": "catalogo-categorias",
+ "items": [
+  {
+   "id": "gid://shopify/MenuItem/814454014315",
+   "title": "Línea Cárnica",
+   "type": "COLLECTION",
+   "url": "/collections/linea-carnica",
+   "resourceId": "gid://shopify/Collection/657899028843",
+   "items": [
+    {
+     "id": "gid://shopify/MenuItem/814454047083",
+     "title": "Corte y fileteado",
+     "type": "COLLECTION",
+     "url": "/collections/corte-y-fileteado",
+     "resourceId": "gid://shopify/Collection/657901289835"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454079851",
+     "title": "Molienda y mezclado",
+     "type": "COLLECTION",
+     "url": "/collections/molienda-y-mezclado",
+     "resourceId": "gid://shopify/Collection/657902141803"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454112619",
+     "title": "Empaque y envasado",
+     "type": "COLLECTION",
+     "url": "/collections/empaque-y-envasado",
+     "resourceId": "gid://shopify/Collection/657901617515"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454145387",
+     "title": "Inyección y marinado",
+     "type": "COLLECTION",
+     "url": "/collections/inyeccion-y-marinado",
+     "resourceId": "gid://shopify/Collection/657902010731"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454178155",
+     "title": "Higiene y sanitización industrial",
+     "type": "COLLECTION",
+     "url": "/collections/higiene-y-sanitizacion-industrial",
+     "resourceId": "gid://shopify/Collection/657901814123"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454210923",
+     "title": "Embutido y porcionado",
+     "type": "COLLECTION",
+     "url": "/collections/embutido-y-porcionado",
+     "resourceId": "gid://shopify/Collection/657901519211"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454243691",
+     "title": "Cocción y tratamiento térmico",
+     "type": "COLLECTION",
+     "url": "/collections/coccion-y-tratamiento-termico",
+     "resourceId": "gid://shopify/Collection/657901158763"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454276459",
+     "title": "Rendering y subproductos",
+     "type": "COLLECTION",
+     "url": "/collections/rendering-y-subproductos",
+     "resourceId": "gid://shopify/Collection/657902403947"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454309227",
+     "title": "Etiquetado y pesaje",
+     "type": "COLLECTION",
+     "url": "/collections/etiquetado-y-pesaje",
+     "resourceId": "gid://shopify/Collection/657901650283"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454341995",
+     "title": "Empacadoras",
+     "type": "COLLECTION",
+     "url": "/collections/empacadoras-linea-carnica",
+     "resourceId": "gid://shopify/Collection/657901551979"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454374763",
+     "title": "Formado y rebozado",
+     "type": "COLLECTION",
+     "url": "/collections/formado-y-rebozado",
+     "resourceId": "gid://shopify/Collection/657901683051"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454407531",
+     "title": "Herramientas y accesorios",
+     "type": "COLLECTION",
+     "url": "/collections/herramientas-y-accesorios",
+     "resourceId": "gid://shopify/Collection/657901781355"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454440299",
+     "title": "Insumos y consumibles",
+     "type": "COLLECTION",
+     "url": "/collections/insumos-y-consumibles-linea-carnica",
+     "resourceId": "gid://shopify/Collection/657901977963"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454473067",
+     "title": "Procesamiento de aves",
+     "type": "COLLECTION",
+     "url": "/collections/procesamiento-de-aves",
+     "resourceId": "gid://shopify/Collection/657902240107"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454505835",
+     "title": "Transporte y manipulación",
+     "type": "COLLECTION",
+     "url": "/collections/transporte-y-manipulacion-linea-carnica",
+     "resourceId": "gid://shopify/Collection/657902535019"
+    }
+   ]
+  },
+  {
+   "id": "gid://shopify/MenuItem/814454538603",
+   "title": "Línea Panadería",
+   "type": "COLLECTION",
+   "url": "/collections/linea-panaderia",
+   "resourceId": "gid://shopify/Collection/657902567787",
+   "items": [
+    {
+     "id": "gid://shopify/MenuItem/814454571371",
+     "title": "Divisoras y boleadoras",
+     "type": "COLLECTION",
+     "url": "/collections/divisoras-y-boleadoras",
+     "resourceId": "gid://shopify/Collection/657901388139"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454604139",
+     "title": "Hornos",
+     "type": "COLLECTION",
+     "url": "/collections/hornos",
+     "resourceId": "gid://shopify/Collection/657901846891"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454636907",
+     "title": "Amasadoras",
+     "type": "COLLECTION",
+     "url": "/collections/amasadoras",
+     "resourceId": "gid://shopify/Collection/657900896619"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454669675",
+     "title": "Batidoras y mezcladoras planetarias",
+     "type": "COLLECTION",
+     "url": "/collections/batidoras-y-mezcladoras-planetarias",
+     "resourceId": "gid://shopify/Collection/657900994923"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454702443",
+     "title": "Cámaras de fermentación",
+     "type": "COLLECTION",
+     "url": "/collections/camaras-de-fermentacion",
+     "resourceId": "gid://shopify/Collection/657901355371"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454735211",
+     "title": "Galleteras y equipos de pastelería",
+     "type": "COLLECTION",
+     "url": "/collections/galleteras-y-equipos-de-pasteleria",
+     "resourceId": "gid://shopify/Collection/657901748587"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454767979",
+     "title": "Laminadoras",
+     "type": "COLLECTION",
+     "url": "/collections/laminadoras",
+     "resourceId": "gid://shopify/Collection/657902043499"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454800747",
+     "title": "Rebanadoras y cortadoras",
+     "type": "COLLECTION",
+     "url": "/collections/rebanadoras-y-cortadoras",
+     "resourceId": "gid://shopify/Collection/657902305643"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454833515",
+     "title": "Formadoras y moldeadoras",
+     "type": "COLLECTION",
+     "url": "/collections/formadoras-y-moldeadoras",
+     "resourceId": "gid://shopify/Collection/657901715819"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454866283",
+     "title": "Refrigeración y abatimiento",
+     "type": "COLLECTION",
+     "url": "/collections/refrigeracion-y-abatimiento",
+     "resourceId": "gid://shopify/Collection/657902371179"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454899051",
+     "title": "Elevadores",
+     "type": "COLLECTION",
+     "url": "/collections/elevadores",
+     "resourceId": "gid://shopify/Collection/657901486443"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454931819",
+     "title": "Empacadoras",
+     "type": "COLLECTION",
+     "url": "/collections/empacadoras-linea-panaderia",
+     "resourceId": "gid://shopify/Collection/657901584747"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454964587",
+     "title": "Cocción",
+     "type": "COLLECTION",
+     "url": "/collections/coccion",
+     "resourceId": "gid://shopify/Collection/657901125995"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814454997355",
+     "title": "Control de clima y enfriamiento",
+     "type": "COLLECTION",
+     "url": "/collections/control-de-clima-y-enfriamiento",
+     "resourceId": "gid://shopify/Collection/657901257067"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814455030123",
+     "title": "Dosificadores y pulverizadores",
+     "type": "COLLECTION",
+     "url": "/collections/dosificadores-y-pulverizadores-linea-panaderia",
+     "resourceId": "gid://shopify/Collection/657901453675"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814455062891",
+     "title": "Lavado de vajilla y utensilios",
+     "type": "COLLECTION",
+     "url": "/collections/lavado-de-vajilla-y-utensilios",
+     "resourceId": "gid://shopify/Collection/657902076267"
+    }
+   ]
+  },
+  {
+   "id": "gid://shopify/MenuItem/814455095659",
+   "title": "Insumos Cárnicos",
+   "type": "COLLECTION",
+   "url": "/collections/insumos-carnicos",
+   "resourceId": "gid://shopify/Collection/657899061611",
+   "items": [
+    {
+     "id": "gid://shopify/MenuItem/814455128427",
+     "title": "Clips",
+     "type": "COLLECTION",
+     "url": "/collections/clips",
+     "resourceId": "gid://shopify/Collection/657901093227"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814455161195",
+     "title": "Lazos y grapas",
+     "type": "COLLECTION",
+     "url": "/collections/lazos-y-grapas",
+     "resourceId": "gid://shopify/Collection/657902109035"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814455193963",
+     "title": "Repuestos para desplume y depilado",
+     "type": "COLLECTION",
+     "url": "/collections/repuestos-para-desplume-y-depilado",
+     "resourceId": "gid://shopify/Collection/657902436715"
+    }
+   ]
+  },
+  {
+   "id": "gid://shopify/MenuItem/814455226731",
+   "title": "Insumos Panadería",
+   "type": "COLLECTION",
+   "url": "/collections/insumos-panaderia",
+   "resourceId": "gid://shopify/Collection/657899094379",
+   "items": [
+    {
+     "id": "gid://shopify/MenuItem/814455259499",
+     "title": "Dosificadores y pulverizadores",
+     "type": "COLLECTION",
+     "url": "/collections/dosificadores-y-pulverizadores-insumos-panaderia",
+     "resourceId": "gid://shopify/Collection/657901420907"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814455292267",
+     "title": "Pulverizadores y equipos de aplicación",
+     "type": "COLLECTION",
+     "url": "/collections/pulverizadores-y-equipos-de-aplicacion",
+     "resourceId": "gid://shopify/Collection/657902272875"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814455325035",
+     "title": "Agentes desmoldantes y abrillantadores",
+     "type": "COLLECTION",
+     "url": "/collections/agentes-desmoldantes-y-abrillantadores-insumos-panaderia",
+     "resourceId": "gid://shopify/Collection/657900798315"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814455357803",
+     "title": "Atadoras y consumibles de atado",
+     "type": "COLLECTION",
+     "url": "/collections/atadoras-y-consumibles-de-atado",
+     "resourceId": "gid://shopify/Collection/657900929387"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814455390571",
+     "title": "Bandejas para hornear",
+     "type": "COLLECTION",
+     "url": "/collections/bandejas-para-hornear",
+     "resourceId": "gid://shopify/Collection/657900962155"
+    },
+    {
+     "id": "gid://shopify/MenuItem/814455423339",
+     "title": "Insumos y auxiliares de panificación",
+     "type": "COLLECTION",
+     "url": "/collections/insumos-y-auxiliares-de-panificacion-insumos-panaderia",
+     "resourceId": "gid://shopify/Collection/657901879659"
+    }
+   ]
+  }
+ ]
+}
