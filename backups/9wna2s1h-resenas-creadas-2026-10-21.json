@@ -1,0 +1,179 @@
+{
+ "tienda": "technofood-9wna2s1h",
+ "fecha": "2026-10-21",
+ "antes": "No existía la definición resena_cliente ni entradas.",
+ "definicion": "gid://shopify/MetaobjectDefinition/28100362603 (resena_cliente, storefront PUBLIC_READ)",
+ "entradas_creadas": [
+  {
+   "handle": "ejemplo-1",
+   "displayName": "María Fernanda Ríos",
+   "fields": [
+    {
+     "key": "nombre",
+     "value": "María Fernanda Ríos"
+    },
+    {
+     "key": "empresa",
+     "value": "Planta de proceso cárnico"
+    },
+    {
+     "key": "calificacion",
+     "value": "5"
+    },
+    {
+     "key": "comentario",
+     "value": "El equipo comercial nos asesoró en la selección del equipo y respondió con rapidez a todas nuestras preguntas."
+    },
+    {
+     "key": "fecha",
+     "value": "2026-10-18"
+    },
+    {
+     "key": "publicada",
+     "value": "true"
+    },
+    {
+     "key": "es_ejemplo",
+     "value": "true"
+    }
+   ]
+  },
+  {
+   "handle": "ejemplo-2",
+   "displayName": "Julián Ortiz",
+   "fields": [
+    {
+     "key": "nombre",
+     "value": "Julián Ortiz"
+    },
+    {
+     "key": "empresa",
+     "value": "Panadería industrial"
+    },
+    {
+     "key": "calificacion",
+     "value": "5"
+    },
+    {
+     "key": "comentario",
+     "value": "Recibimos una atención cordial desde la primera llamada. Nos explicaron las opciones con claridad y sin presiones."
+    },
+    {
+     "key": "fecha",
+     "value": "2026-10-15"
+    },
+    {
+     "key": "publicada",
+     "value": "true"
+    },
+    {
+     "key": "es_ejemplo",
+     "value": "true"
+    }
+   ]
+  },
+  {
+   "handle": "ejemplo-3",
+   "displayName": "Paula Cárdenas",
+   "fields": [
+    {
+     "key": "nombre",
+     "value": "Paula Cárdenas"
+    },
+    {
+     "key": "empresa",
+     "value": "Jefe de compras, planta avícola"
+    },
+    {
+     "key": "calificacion",
+     "value": "4"
+    },
+    {
+     "key": "comentario",
+     "value": "Valoramos el seguimiento después de la compra: siempre encontramos a alguien disponible para resolver nuestras dudas."
+    },
+    {
+     "key": "fecha",
+     "value": "2026-10-12"
+    },
+    {
+     "key": "publicada",
+     "value": "true"
+    },
+    {
+     "key": "es_ejemplo",
+     "value": "true"
+    }
+   ]
+  },
+  {
+   "handle": "ejemplo-4",
+   "displayName": "Andrés Molina",
+   "fields": [
+    {
+     "key": "nombre",
+     "value": "Andrés Molina"
+    },
+    {
+     "key": "empresa",
+     "value": "Distribuidora de alimentos"
+    },
+    {
+     "key": "calificacion",
+     "value": "5"
+    },
+    {
+     "key": "comentario",
+     "value": "La asesoría fue clara y cercana. Nos ayudaron a entender qué opción se ajustaba mejor a nuestra operación."
+    },
+    {
+     "key": "fecha",
+     "value": "2026-10-08"
+    },
+    {
+     "key": "publicada",
+     "value": "true"
+    },
+    {
+     "key": "es_ejemplo",
+     "value": "true"
+    }
+   ]
+  },
+  {
+   "handle": "ejemplo-5",
+   "displayName": "Diana Herrera",
+   "fields": [
+    {
+     "key": "nombre",
+     "value": "Diana Herrera"
+    },
+    {
+     "key": "empresa",
+     "value": "Coordinadora de mantenimiento"
+    },
+    {
+     "key": "calificacion",
+     "value": "4"
+    },
+    {
+     "key": "comentario",
+     "value": "Buena comunicación con el área de posventa: atendieron nuestras solicitudes de forma oportuna."
+    },
+    {
+     "key": "fecha",
+     "value": "2026-10-04"
+    },
+    {
+     "key": "publicada",
+     "value": "true"
+    },
+    {
+     "key": "es_ejemplo",
+     "value": "true"
+    }
+   ]
+  }
+ ],
+ "como_revertir": "Eliminar las entradas ejemplo-1..5 y la definición resena_cliente en Contenido › Metaobjetos."
+}
