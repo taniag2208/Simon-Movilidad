@@ -1,0 +1,846 @@
+[
+ {
+  "handle": "catalogo-categorias",
+  "id": "gid://shopify/Menu/323537076587",
+  "title": "Catálogo Technofood - Categorías",
+  "items": [
+   {
+    "id": "gid://shopify/MenuItem/814454014315",
+    "title": "Línea Cárnica",
+    "type": "COLLECTION",
+    "url": "/collections/linea-carnica",
+    "resourceId": "gid://shopify/Collection/657899028843",
+    "items": [
+     {
+      "id": "gid://shopify/MenuItem/814454047083",
+      "title": "Corte y fileteado",
+      "type": "COLLECTION",
+      "url": "/collections/corte-y-fileteado",
+      "resourceId": "gid://shopify/Collection/657901289835",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454079851",
+      "title": "Molienda y mezclado",
+      "type": "COLLECTION",
+      "url": "/collections/molienda-y-mezclado",
+      "resourceId": "gid://shopify/Collection/657902141803",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454112619",
+      "title": "Empaque y envasado",
+      "type": "COLLECTION",
+      "url": "/collections/empaque-y-envasado",
+      "resourceId": "gid://shopify/Collection/657901617515",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454145387",
+      "title": "Inyección y marinado",
+      "type": "COLLECTION",
+      "url": "/collections/inyeccion-y-marinado",
+      "resourceId": "gid://shopify/Collection/657902010731",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454178155",
+      "title": "Higiene y sanitización industrial",
+      "type": "COLLECTION",
+      "url": "/collections/higiene-y-sanitizacion-industrial",
+      "resourceId": "gid://shopify/Collection/657901814123",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454210923",
+      "title": "Embutido y porcionado",
+      "type": "COLLECTION",
+      "url": "/collections/embutido-y-porcionado",
+      "resourceId": "gid://shopify/Collection/657901519211",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454243691",
+      "title": "Cocción y tratamiento térmico",
+      "type": "COLLECTION",
+      "url": "/collections/coccion-y-tratamiento-termico",
+      "resourceId": "gid://shopify/Collection/657901158763",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454276459",
+      "title": "Rendering y subproductos",
+      "type": "COLLECTION",
+      "url": "/collections/rendering-y-subproductos",
+      "resourceId": "gid://shopify/Collection/657902403947",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454309227",
+      "title": "Etiquetado y pesaje",
+      "type": "COLLECTION",
+      "url": "/collections/etiquetado-y-pesaje",
+      "resourceId": "gid://shopify/Collection/657901650283",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454341995",
+      "title": "Empacadoras",
+      "type": "COLLECTION",
+      "url": "/collections/empacadoras-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657901551979",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454374763",
+      "title": "Formado y rebozado",
+      "type": "COLLECTION",
+      "url": "/collections/formado-y-rebozado",
+      "resourceId": "gid://shopify/Collection/657901683051",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454407531",
+      "title": "Herramientas y accesorios",
+      "type": "COLLECTION",
+      "url": "/collections/herramientas-y-accesorios",
+      "resourceId": "gid://shopify/Collection/657901781355",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454440299",
+      "title": "Insumos y consumibles",
+      "type": "COLLECTION",
+      "url": "/collections/insumos-y-consumibles-insumos-carnicos",
+      "resourceId": "gid://shopify/Collection/657901945195",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454473067",
+      "title": "Procesamiento de aves",
+      "type": "COLLECTION",
+      "url": "/collections/procesamiento-de-aves",
+      "resourceId": "gid://shopify/Collection/657902240107",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454505835",
+      "title": "Transporte y manipulación",
+      "type": "COLLECTION",
+      "url": "/collections/transporte-y-manipulacion-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657902535019",
+      "items": []
+     }
+    ]
+   },
+   {
+    "id": "gid://shopify/MenuItem/814454538603",
+    "title": "Línea Panadería",
+    "type": "COLLECTION",
+    "url": "/collections/linea-panaderia",
+    "resourceId": "gid://shopify/Collection/657902567787",
+    "items": [
+     {
+      "id": "gid://shopify/MenuItem/814454571371",
+      "title": "Divisoras y boleadoras",
+      "type": "COLLECTION",
+      "url": "/collections/divisoras-y-boleadoras",
+      "resourceId": "gid://shopify/Collection/657901388139",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454604139",
+      "title": "Hornos",
+      "type": "COLLECTION",
+      "url": "/collections/hornos",
+      "resourceId": "gid://shopify/Collection/657901846891",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454636907",
+      "title": "Amasadoras",
+      "type": "COLLECTION",
+      "url": "/collections/amasadoras",
+      "resourceId": "gid://shopify/Collection/657900896619",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454669675",
+      "title": "Batidoras y mezcladoras planetarias",
+      "type": "COLLECTION",
+      "url": "/collections/batidoras-y-mezcladoras-planetarias",
+      "resourceId": "gid://shopify/Collection/657900994923",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454702443",
+      "title": "Cámaras de fermentación",
+      "type": "COLLECTION",
+      "url": "/collections/camaras-de-fermentacion",
+      "resourceId": "gid://shopify/Collection/657901355371",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454735211",
+      "title": "Galleteras y equipos de pastelería",
+      "type": "COLLECTION",
+      "url": "/collections/galleteras-y-equipos-de-pasteleria",
+      "resourceId": "gid://shopify/Collection/657901748587",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454767979",
+      "title": "Laminadoras",
+      "type": "COLLECTION",
+      "url": "/collections/laminadoras",
+      "resourceId": "gid://shopify/Collection/657902043499",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454800747",
+      "title": "Rebanadoras y cortadoras",
+      "type": "COLLECTION",
+      "url": "/collections/rebanadoras-y-cortadoras",
+      "resourceId": "gid://shopify/Collection/657902305643",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454833515",
+      "title": "Formadoras y moldeadoras",
+      "type": "COLLECTION",
+      "url": "/collections/formadoras-y-moldeadoras",
+      "resourceId": "gid://shopify/Collection/657901715819",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454866283",
+      "title": "Refrigeración y abatimiento",
+      "type": "COLLECTION",
+      "url": "/collections/refrigeracion-y-abatimiento",
+      "resourceId": "gid://shopify/Collection/657902371179",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454899051",
+      "title": "Elevadores",
+      "type": "COLLECTION",
+      "url": "/collections/elevadores",
+      "resourceId": "gid://shopify/Collection/657901486443",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454931819",
+      "title": "Empacadoras",
+      "type": "COLLECTION",
+      "url": "/collections/empacadoras-linea-panaderia",
+      "resourceId": "gid://shopify/Collection/657901584747",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454964587",
+      "title": "Cocción",
+      "type": "COLLECTION",
+      "url": "/collections/coccion",
+      "resourceId": "gid://shopify/Collection/657901125995",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814454997355",
+      "title": "Control de clima y enfriamiento",
+      "type": "COLLECTION",
+      "url": "/collections/control-de-clima-y-enfriamiento",
+      "resourceId": "gid://shopify/Collection/657901257067",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455030123",
+      "title": "Dosificadores y pulverizadores",
+      "type": "COLLECTION",
+      "url": "/collections/dosificadores-y-pulverizadores-linea-panaderia",
+      "resourceId": "gid://shopify/Collection/657901453675",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455062891",
+      "title": "Lavado de vajilla y utensilios",
+      "type": "COLLECTION",
+      "url": "/collections/lavado-de-vajilla-y-utensilios",
+      "resourceId": "gid://shopify/Collection/657902076267",
+      "items": []
+     }
+    ]
+   },
+   {
+    "id": "gid://shopify/MenuItem/814455095659",
+    "title": "Insumos Cárnicos",
+    "type": "COLLECTION",
+    "url": "/collections/insumos-carnicos",
+    "resourceId": "gid://shopify/Collection/657899061611",
+    "items": [
+     {
+      "id": "gid://shopify/MenuItem/814455128427",
+      "title": "Clips",
+      "type": "COLLECTION",
+      "url": "/collections/clips",
+      "resourceId": "gid://shopify/Collection/657901093227",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455161195",
+      "title": "Lazos y grapas",
+      "type": "COLLECTION",
+      "url": "/collections/lazos-y-grapas",
+      "resourceId": "gid://shopify/Collection/657902109035",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455193963",
+      "title": "Repuestos para desplume y depilado",
+      "type": "COLLECTION",
+      "url": "/collections/repuestos-para-desplume-y-depilado",
+      "resourceId": "gid://shopify/Collection/657902436715",
+      "items": []
+     }
+    ]
+   },
+   {
+    "id": "gid://shopify/MenuItem/814455226731",
+    "title": "Insumos Panadería",
+    "type": "COLLECTION",
+    "url": "/collections/insumos-panaderia",
+    "resourceId": "gid://shopify/Collection/657899094379",
+    "items": [
+     {
+      "id": "gid://shopify/MenuItem/814455259499",
+      "title": "Dosificadores y pulverizadores",
+      "type": "COLLECTION",
+      "url": "/collections/dosificadores-y-pulverizadores-insumos-panaderia",
+      "resourceId": "gid://shopify/Collection/657901420907",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455292267",
+      "title": "Pulverizadores y equipos de aplicación",
+      "type": "COLLECTION",
+      "url": "/collections/pulverizadores-y-equipos-de-aplicacion",
+      "resourceId": "gid://shopify/Collection/657902272875",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455325035",
+      "title": "Agentes desmoldantes y abrillantadores",
+      "type": "COLLECTION",
+      "url": "/collections/agentes-desmoldantes-y-abrillantadores-insumos-panaderia",
+      "resourceId": "gid://shopify/Collection/657900798315",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455357803",
+      "title": "Atadoras y consumibles de atado",
+      "type": "COLLECTION",
+      "url": "/collections/atadoras-y-consumibles-de-atado",
+      "resourceId": "gid://shopify/Collection/657900929387",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455390571",
+      "title": "Bandejas para hornear",
+      "type": "COLLECTION",
+      "url": "/collections/bandejas-para-hornear",
+      "resourceId": "gid://shopify/Collection/657900962155",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455423339",
+      "title": "Insumos y auxiliares de panificación",
+      "type": "COLLECTION",
+      "url": "/collections/insumos-y-auxiliares-de-panificacion-insumos-panaderia",
+      "resourceId": "gid://shopify/Collection/657901879659",
+      "items": []
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "handle": "catalogo-marcas",
+  "id": "gid://shopify/Menu/323537240427",
+  "title": "Catálogo Technofood - Marcas",
+  "items": [
+   {
+    "id": "gid://shopify/MenuItem/814455456107",
+    "title": "Línea Cárnica",
+    "type": "COLLECTION",
+    "url": "/collections/linea-carnica",
+    "resourceId": "gid://shopify/Collection/657899028843",
+    "items": [
+     {
+      "id": "gid://shopify/MenuItem/814455488875",
+      "title": "AMTEK",
+      "type": "COLLECTION",
+      "url": "/collections/amtek-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657899487595",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455521643",
+      "title": "AWE",
+      "type": "COLLECTION",
+      "url": "/collections/awe-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657899520363",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455554411",
+      "title": "BAADER",
+      "type": "COLLECTION",
+      "url": "/collections/baader-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657899553131",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455587179",
+      "title": "BETTCHER",
+      "type": "COLLECTION",
+      "url": "/collections/bettcher-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657899585899",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455619947",
+      "title": "EFA",
+      "type": "COLLECTION",
+      "url": "/collections/efa-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657899618667",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455652715",
+      "title": "ESPERA",
+      "type": "COLLECTION",
+      "url": "/collections/espera-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657899651435",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455685483",
+      "title": "FREY",
+      "type": "COLLECTION",
+      "url": "/collections/frey-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657899684203",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455718251",
+      "title": "GASER",
+      "type": "COLLECTION",
+      "url": "/collections/gaser-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657899716971",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455751019",
+      "title": "GRASSELLI",
+      "type": "COLLECTION",
+      "url": "/collections/grasselli-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657899749739",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455783787",
+      "title": "HOLAC",
+      "type": "COLLECTION",
+      "url": "/collections/holac-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657899782507",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455816555",
+      "title": "INTERNATIONAL CLIP",
+      "type": "COLLECTION",
+      "url": "/collections/international-clip-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657899815275",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455849323",
+      "title": "JAW FENG",
+      "type": "COLLECTION",
+      "url": "/collections/jaw-feng-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657899848043",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455882091",
+      "title": "LIMA",
+      "type": "COLLECTION",
+      "url": "/collections/lima-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657899880811",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455914859",
+      "title": "MAKU",
+      "type": "COLLECTION",
+      "url": "/collections/maku-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657899913579",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455947627",
+      "title": "Mayma",
+      "type": "COLLECTION",
+      "url": "/collections/mayma-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657899946347",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814455980395",
+      "title": "OESTERGAARD",
+      "type": "COLLECTION",
+      "url": "/collections/oestergaard-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657899979115",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456013163",
+      "title": "PAGANINI",
+      "type": "COLLECTION",
+      "url": "/collections/paganini-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657900011883",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456045931",
+      "title": "REICH",
+      "type": "COLLECTION",
+      "url": "/collections/reich-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657900044651",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456078699",
+      "title": "SEYDELMANN",
+      "type": "COLLECTION",
+      "url": "/collections/seydelmann-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657900077419",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456111467",
+      "title": "SUPERVAC",
+      "type": "COLLECTION",
+      "url": "/collections/supervac-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657900110187",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456144235",
+      "title": "Technofood",
+      "type": "COLLECTION",
+      "url": "/collections/technofood-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657900142955",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456177003",
+      "title": "VARIOVAC",
+      "type": "COLLECTION",
+      "url": "/collections/variovac-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657900175723",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456209771",
+      "title": "VELEC",
+      "type": "COLLECTION",
+      "url": "/collections/velec-linea-carnica",
+      "resourceId": "gid://shopify/Collection/657900208491",
+      "items": []
+     }
+    ]
+   },
+   {
+    "id": "gid://shopify/MenuItem/814456242539",
+    "title": "Línea Panadería",
+    "type": "COLLECTION",
+    "url": "/collections/linea-panaderia",
+    "resourceId": "gid://shopify/Collection/657902567787",
+    "items": [
+     {
+      "id": "gid://shopify/MenuItem/814456275307",
+      "title": "Alba",
+      "type": "COLLECTION",
+      "url": "/collections/alba-linea-panaderia",
+      "resourceId": "gid://shopify/Collection/657900241259",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456308075",
+      "title": "Boyens",
+      "type": "COLLECTION",
+      "url": "/collections/boyens-linea-panaderia",
+      "resourceId": "gid://shopify/Collection/657900274027",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456340843",
+      "title": "Dams",
+      "type": "COLLECTION",
+      "url": "/collections/dams-linea-panaderia",
+      "resourceId": "gid://shopify/Collection/657900306795",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456373611",
+      "title": "Dovaina",
+      "type": "COLLECTION",
+      "url": "/collections/dovaina-linea-panaderia",
+      "resourceId": "gid://shopify/Collection/657900339563",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456406379",
+      "title": "Fagor",
+      "type": "COLLECTION",
+      "url": "/collections/fagor-linea-panaderia",
+      "resourceId": "gid://shopify/Collection/657900372331",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456439147",
+      "title": "Ferneto",
+      "type": "COLLECTION",
+      "url": "/collections/ferneto-linea-panaderia",
+      "resourceId": "gid://shopify/Collection/657900405099",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456471915",
+      "title": "Logiudice",
+      "type": "COLLECTION",
+      "url": "/collections/logiudice-linea-panaderia",
+      "resourceId": "gid://shopify/Collection/657900470635",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456504683",
+      "title": "Matas",
+      "type": "COLLECTION",
+      "url": "/collections/matas-linea-panaderia",
+      "resourceId": "gid://shopify/Collection/657900503403",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456537451",
+      "title": "Mayma",
+      "type": "COLLECTION",
+      "url": "/collections/mayma-linea-panaderia",
+      "resourceId": "gid://shopify/Collection/657900536171",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456570219",
+      "title": "Mecateck",
+      "type": "COLLECTION",
+      "url": "/collections/mecateck-linea-panaderia",
+      "resourceId": "gid://shopify/Collection/657900568939",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456602987",
+      "title": "Memak",
+      "type": "COLLECTION",
+      "url": "/collections/memak-linea-panaderia",
+      "resourceId": "gid://shopify/Collection/657900601707",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456635755",
+      "title": "Mimac",
+      "type": "COLLECTION",
+      "url": "/collections/mimac-linea-panaderia",
+      "resourceId": "gid://shopify/Collection/657900634475",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456668523",
+      "title": "Rollmatic",
+      "type": "COLLECTION",
+      "url": "/collections/rollmatic-linea-panaderia",
+      "resourceId": "gid://shopify/Collection/657900667243",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456701291",
+      "title": "Sartori",
+      "type": "COLLECTION",
+      "url": "/collections/sartori-linea-panaderia",
+      "resourceId": "gid://shopify/Collection/657900700011",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456734059",
+      "title": "Technofood",
+      "type": "COLLECTION",
+      "url": "/collections/technofood-linea-panaderia",
+      "resourceId": "gid://shopify/Collection/657900732779",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456766827",
+      "title": "Zanolli",
+      "type": "COLLECTION",
+      "url": "/collections/zanolli-linea-panaderia",
+      "resourceId": "gid://shopify/Collection/657900765547",
+      "items": []
+     }
+    ]
+   },
+   {
+    "id": "gid://shopify/MenuItem/814456799595",
+    "title": "Insumos Cárnicos",
+    "type": "COLLECTION",
+    "url": "/collections/insumos-carnicos",
+    "resourceId": "gid://shopify/Collection/657899061611",
+    "items": [
+     {
+      "id": "gid://shopify/MenuItem/814456832363",
+      "title": "AWE",
+      "type": "COLLECTION",
+      "url": "/collections/awe-insumos-carnicos",
+      "resourceId": "gid://shopify/Collection/657899127147",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456865131",
+      "title": "BAADER",
+      "type": "COLLECTION",
+      "url": "/collections/baader-insumos-carnicos",
+      "resourceId": "gid://shopify/Collection/657899192683",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456897899",
+      "title": "EFA",
+      "type": "COLLECTION",
+      "url": "/collections/efa-insumos-carnicos",
+      "resourceId": "gid://shopify/Collection/657899225451",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456930667",
+      "title": "GASER",
+      "type": "COLLECTION",
+      "url": "/collections/gaser-insumos-carnicos",
+      "resourceId": "gid://shopify/Collection/657899258219",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456963435",
+      "title": "HP",
+      "type": "COLLECTION",
+      "url": "/collections/hp-insumos-carnicos",
+      "resourceId": "gid://shopify/Collection/657899290987",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814456996203",
+      "title": "INTERNATIONAL CLIP",
+      "type": "COLLECTION",
+      "url": "/collections/international-clip-insumos-carnicos",
+      "resourceId": "gid://shopify/Collection/657899323755",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814457028971",
+      "title": "Taesa",
+      "type": "COLLECTION",
+      "url": "/collections/taesa-insumos-carnicos",
+      "resourceId": "gid://shopify/Collection/657899356523",
+      "items": []
+     }
+    ]
+   },
+   {
+    "id": "gid://shopify/MenuItem/814457061739",
+    "title": "Insumos Panadería",
+    "type": "COLLECTION",
+    "url": "/collections/insumos-panaderia",
+    "resourceId": "gid://shopify/Collection/657899094379",
+    "items": [
+     {
+      "id": "gid://shopify/MenuItem/814457094507",
+      "title": "Boyens",
+      "type": "COLLECTION",
+      "url": "/collections/boyens-insumos-panaderia",
+      "resourceId": "gid://shopify/Collection/657899389291",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814457127275",
+      "title": "Romms",
+      "type": "COLLECTION",
+      "url": "/collections/romms-insumos-panaderia",
+      "resourceId": "gid://shopify/Collection/657899422059",
+      "items": []
+     },
+     {
+      "id": "gid://shopify/MenuItem/814457160043",
+      "title": "Technofood",
+      "type": "COLLECTION",
+      "url": "/collections/technofood-insumos-panaderia",
+      "resourceId": "gid://shopify/Collection/657899454827",
+      "items": []
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "handle": "main-menu",
+  "id": "gid://shopify/Menu/323529376107",
+  "title": "Main menu",
+  "items": [
+   {
+    "id": "gid://shopify/MenuItem/814453817707",
+    "title": "Home",
+    "type": "FRONTPAGE",
+    "url": "/"
+   },
+   {
+    "id": "gid://shopify/MenuItem/814453850475",
+    "title": "Catalog",
+    "type": "CATALOG",
+    "url": "/collections/all"
+   },
+   {
+    "id": "gid://shopify/MenuItem/814453883243",
+    "title": "Contact",
+    "type": "PAGE",
+    "url": "/pages/contact",
+    "resourceId": "gid://shopify/Page/716859343211"
+   }
+  ]
+ },
+ {
+  "handle": "footer",
+  "id": "gid://shopify/Menu/323529408875",
+  "title": "Footer menu",
+  "items": [
+   {
+    "id": "gid://shopify/MenuItem/814453916011",
+    "title": "Search",
+    "type": "SEARCH",
+    "url": "/search"
+   },
+   {
+    "id": "gid://shopify/MenuItem/814453948779",
+    "title": "Your Privacy Choices",
+    "type": "PAGE",
+    "url": "/pages/data-sharing-opt-out",
+    "resourceId": "gid://shopify/Page/716870517099"
+   }
+  ]
+ }
+]

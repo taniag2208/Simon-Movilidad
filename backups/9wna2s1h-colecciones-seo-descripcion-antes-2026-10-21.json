@@ -1,0 +1,74 @@
+{
+ "linea-panaderia": {
+  "id": "gid://shopify/Collection/657902567787",
+  "descriptionHtml": "",
+  "seo": {
+   "title": null,
+   "description": null
+  }
+ },
+ "quesos": {
+  "id": "gid://shopify/Collection/657902600555",
+  "descriptionHtml": "<p>Cortadoras y equipos para procesar quesos de marcas como Holac y Zanolli. Cotice con un asesor de Technofood.</p>",
+  "seo": {
+   "title": "Equipos para procesar quesos | Technofood Colombia",
+   "description": "Cortadoras y equipos para la industria de quesos. Distribuidor autorizado en Colombia. Consulte el catálogo y cotice con un asesor de Technofood."
+  }
+ },
+ "petfood": {
+  "id": "gid://shopify/Collection/657902633323",
+  "descriptionHtml": "",
+  "seo": {
+   "title": null,
+   "description": null
+  }
+ },
+ "beneficio": {
+  "id": "gid://shopify/Collection/658362532203",
+  "descriptionHtml": "",
+  "seo": {
+   "title": null,
+   "description": null
+  }
+ },
+ "corte-y-acondicionamiento": {
+  "id": "gid://shopify/Collection/658362564971",
+  "descriptionHtml": "",
+  "seo": {
+   "title": null,
+   "description": null
+  }
+ },
+ "valor-agregado": {
+  "id": "gid://shopify/Collection/658362597739",
+  "descriptionHtml": "",
+  "seo": {
+   "title": null,
+   "description": null
+  }
+ },
+ "empaque": {
+  "id": "gid://shopify/Collection/658362630507",
+  "descriptionHtml": "",
+  "seo": {
+   "title": null,
+   "description": null
+  }
+ },
+ "higiene": {
+  "id": "gid://shopify/Collection/658362663275",
+  "descriptionHtml": "",
+  "seo": {
+   "title": null,
+   "description": null
+  }
+ },
+ "fermentacion-y-horneado": {
+  "id": "gid://shopify/Collection/658362696043",
+  "descriptionHtml": "",
+  "seo": {
+   "title": null,
+   "description": null
+  }
+ }
+}
