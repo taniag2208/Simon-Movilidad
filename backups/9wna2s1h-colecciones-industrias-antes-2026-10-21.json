@@ -1,0 +1,109 @@
+{
+ "tienda": "technofood-9wna2s1h",
+ "fecha": "2026-10-21",
+ "colecciones": {
+  "porcino": {
+   "id": "gid://shopify/Collection/657898799467",
+   "rules": [
+    [
+     "TAG",
+     "EQUALS",
+     "porcino"
+    ]
+   ],
+   "disjunctive": false,
+   "count": 16
+  },
+  "bovino": {
+   "rules": [
+    [
+     "TAG",
+     "EQUALS",
+     "bovino"
+    ]
+   ],
+   "disjunctive": false,
+   "count": 11,
+   "id": "gid://shopify/Collection/657898832235"
+  },
+  "avicola": {
+   "rules": [
+    [
+     "TAG",
+     "EQUALS",
+     "avicola"
+    ]
+   ],
+   "disjunctive": false,
+   "count": 16,
+   "id": "gid://shopify/Collection/657898865003"
+  },
+  "piscicola": {
+   "rules": [
+    [
+     "TAG",
+     "EQUALS",
+     "piscicola"
+    ]
+   ],
+   "disjunctive": false,
+   "count": 13,
+   "id": "gid://shopify/Collection/657898897771"
+  },
+  "panaderia": {
+   "rules": [
+    [
+     "TAG",
+     "EQUALS",
+     "panaderia"
+    ]
+   ],
+   "disjunctive": false,
+   "count": 130,
+   "id": "gid://shopify/Collection/657898930539"
+  },
+  "linea-panaderia": {
+   "rules": [
+    [
+     "TAG",
+     "EQUALS",
+     "linea:linea-panaderia"
+    ],
+    [
+     "TAG",
+     "EQUALS",
+     "linea:insumos-panaderia"
+    ]
+   ],
+   "disjunctive": true,
+   "count": 132,
+   "id": "gid://shopify/Collection/657902567787"
+  },
+  "quesos": {
+   "id": "gid://shopify/Collection/657902600555",
+   "templateSuffix": "quesos",
+   "rules": [
+    [
+     "TAG",
+     "EQUALS",
+     "quesos"
+    ]
+   ],
+   "disjunctive": false,
+   "count": 3
+  },
+  "petfood": {
+   "id": "gid://shopify/Collection/657902633323",
+   "templateSuffix": "petfood",
+   "rules": [
+    [
+     "TAG",
+     "EQUALS",
+     "petfood"
+    ]
+   ],
+   "disjunctive": false,
+   "count": 0
+  }
+ }
+}

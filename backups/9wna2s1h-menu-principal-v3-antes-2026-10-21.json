@@ -1,0 +1,129 @@
+{
+ "handle": "menu-principal-technofood-v3",
+ "title": "Menú principal Technofood – v3",
+ "items": [
+  {
+   "title": "Inicio",
+   "url": "/",
+   "type": "FRONTPAGE",
+   "items": []
+  },
+  {
+   "title": "Nosotros",
+   "url": "/pages/nosotros",
+   "type": "PAGE",
+   "items": []
+  },
+  {
+   "title": "Productos",
+   "url": "/collections",
+   "type": "COLLECTIONS",
+   "items": [
+    {
+     "title": "LÍNEA CÁRNICA",
+     "url": "/collections/linea-carnica",
+     "type": "COLLECTION",
+     "items": [
+      {
+       "title": "Corte y fileteado",
+       "url": "/collections/corte-y-fileteado"
+      },
+      {
+       "title": "Molienda y mezclado",
+       "url": "/collections/molienda-y-mezclado"
+      },
+      {
+       "title": "Empaque y envasado",
+       "url": "/collections/empaque-y-envasado"
+      },
+      {
+       "title": "Inyección y marinado",
+       "url": "/collections/inyeccion-y-marinado"
+      },
+      {
+       "title": "Higiene y sanitización industrial",
+       "url": "/collections/higiene-y-sanitizacion-industrial"
+      },
+      {
+       "title": "Embutido y porcionado",
+       "url": "/collections/embutido-y-porcionado"
+      },
+      {
+       "title": "Ver toda la línea",
+       "url": "/collections/linea-carnica"
+      }
+     ]
+    },
+    {
+     "title": "LÍNEA PANADERÍA",
+     "url": "/collections/linea-panaderia",
+     "type": "COLLECTION",
+     "items": [
+      {
+       "title": "Divisoras y boleadoras",
+       "url": "/collections/divisoras-y-boleadoras"
+      },
+      {
+       "title": "Hornos",
+       "url": "/collections/hornos"
+      },
+      {
+       "title": "Amasadoras",
+       "url": "/collections/amasadoras"
+      },
+      {
+       "title": "Batidoras y mezcladoras planetarias",
+       "url": "/collections/batidoras-y-mezcladoras-planetarias"
+      },
+      {
+       "title": "Cámaras de fermentación",
+       "url": "/collections/camaras-de-fermentacion"
+      },
+      {
+       "title": "Laminadoras",
+       "url": "/collections/laminadoras"
+      },
+      {
+       "title": "Ver toda la línea",
+       "url": "/collections/linea-panaderia"
+      }
+     ]
+    },
+    {
+     "title": "INSUMOS",
+     "url": "#",
+     "type": "HTTP",
+     "items": [
+      {
+       "title": "Insumos cárnicos",
+       "url": "/collections/insumos-carnicos"
+      },
+      {
+       "title": "Insumos panadería",
+       "url": "/collections/insumos-panaderia"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Soporte Técnico",
+   "url": "/pages/posventa-y-repuestos",
+   "type": "PAGE",
+   "items": []
+  },
+  {
+   "title": "Noticias",
+   "url": "/blogs/news",
+   "type": "BLOG",
+   "items": []
+  },
+  {
+   "title": "Contacto",
+   "url": "/pages/contacto",
+   "type": "PAGE",
+   "items": []
+  }
+ ],
+ "id": "gid://shopify/Menu/323612672363"
+}
