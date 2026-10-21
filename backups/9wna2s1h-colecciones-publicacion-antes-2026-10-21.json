@@ -1,0 +1,994 @@
+[
+ {
+  "id": "gid://shopify/Collection/657894113643",
+  "h": "frontpage",
+  "t": "Home page",
+  "pub": true,
+  "a": 0,
+  "d": 1
+ },
+ {
+  "id": "gid://shopify/Collection/657898766699",
+  "h": "mas-vendidos",
+  "t": "Los más vendidos",
+  "pub": true,
+  "a": 0,
+  "d": 5
+ },
+ {
+  "id": "gid://shopify/Collection/657898799467",
+  "h": "porcino",
+  "t": "Porcino",
+  "pub": true,
+  "a": 60,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657898832235",
+  "h": "bovino",
+  "t": "Bovino",
+  "pub": true,
+  "a": 60,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657898865003",
+  "h": "avicola",
+  "t": "Avícola",
+  "pub": true,
+  "a": 45,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657898897771",
+  "h": "piscicola",
+  "t": "Piscícola",
+  "pub": true,
+  "a": 45,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657898930539",
+  "h": "panaderia-retirada",
+  "t": "Panadería",
+  "pub": false,
+  "a": 110,
+  "d": 20
+ },
+ {
+  "id": "gid://shopify/Collection/657898996075",
+  "h": "soluciones-destacadas",
+  "t": "Soluciones destacadas",
+  "pub": true,
+  "a": 0,
+  "d": 2
+ },
+ {
+  "id": "gid://shopify/Collection/657899028843",
+  "h": "linea-carnica",
+  "t": "Línea completa cárnica",
+  "pub": true,
+  "a": 112,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899061611",
+  "h": "insumos-carnicos",
+  "t": "Insumos Cárnicos",
+  "pub": true,
+  "a": 10,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899094379",
+  "h": "insumos-panaderia",
+  "t": "Insumos Panadería",
+  "pub": true,
+  "a": 11,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899127147",
+  "h": "awe-insumos-carnicos",
+  "t": "AWE · Insumos Cárnicos",
+  "pub": true,
+  "a": 1,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899192683",
+  "h": "baader-insumos-carnicos",
+  "t": "BAADER · Insumos Cárnicos",
+  "pub": true,
+  "a": 1,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899225451",
+  "h": "efa-insumos-carnicos",
+  "t": "EFA · Insumos Cárnicos",
+  "pub": true,
+  "a": 1,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899258219",
+  "h": "gaser-insumos-carnicos",
+  "t": "GASER · Insumos Cárnicos",
+  "pub": true,
+  "a": 1,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899290987",
+  "h": "hp-insumos-carnicos",
+  "t": "HP · Insumos Cárnicos",
+  "pub": true,
+  "a": 1,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899323755",
+  "h": "international-clip-insumos-carnicos",
+  "t": "INTERNATIONAL CLIP · Insumos Cárnicos",
+  "pub": true,
+  "a": 4,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899356523",
+  "h": "taesa-insumos-carnicos",
+  "t": "Taesa · Insumos Cárnicos",
+  "pub": true,
+  "a": 1,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899389291",
+  "h": "boyens-insumos-panaderia",
+  "t": "Boyens · Insumos Panadería",
+  "pub": true,
+  "a": 6,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899422059",
+  "h": "romms-insumos-panaderia",
+  "t": "Romms · Insumos Panadería",
+  "pub": true,
+  "a": 1,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899454827",
+  "h": "technofood-insumos-panaderia",
+  "t": "Technofood · Insumos Panadería",
+  "pub": true,
+  "a": 4,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899487595",
+  "h": "amtek-linea-carnica",
+  "t": "AMTEK · Línea Cárnica",
+  "pub": true,
+  "a": 3,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899520363",
+  "h": "awe-linea-carnica",
+  "t": "AWE · Línea Cárnica",
+  "pub": true,
+  "a": 11,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899553131",
+  "h": "baader-linea-carnica",
+  "t": "BAADER · Línea Cárnica",
+  "pub": true,
+  "a": 4,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899585899",
+  "h": "bettcher-linea-carnica",
+  "t": "BETTCHER · Línea Cárnica",
+  "pub": true,
+  "a": 8,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899618667",
+  "h": "efa-linea-carnica",
+  "t": "EFA · Línea Cárnica",
+  "pub": true,
+  "a": 5,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899651435",
+  "h": "espera-linea-carnica",
+  "t": "ESPERA · Línea Cárnica",
+  "pub": true,
+  "a": 4,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899684203",
+  "h": "frey-linea-carnica",
+  "t": "FREY · Línea Cárnica",
+  "pub": true,
+  "a": 5,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899716971",
+  "h": "gaser-linea-carnica",
+  "t": "GASER · Línea Cárnica",
+  "pub": true,
+  "a": 2,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899749739",
+  "h": "grasselli-linea-carnica",
+  "t": "GRASSELLI · Línea Cárnica",
+  "pub": true,
+  "a": 4,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899782507",
+  "h": "holac-linea-carnica",
+  "t": "HOLAC · Línea Cárnica",
+  "pub": true,
+  "a": 3,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899815275",
+  "h": "international-clip-linea-carnica",
+  "t": "INTERNATIONAL CLIP · Línea Cárnica",
+  "pub": true,
+  "a": 2,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899848043",
+  "h": "jaw-feng-linea-carnica",
+  "t": "JAW FENG · Línea Cárnica",
+  "pub": true,
+  "a": 4,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899880811",
+  "h": "lima-linea-carnica",
+  "t": "LIMA · Línea Cárnica",
+  "pub": true,
+  "a": 3,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899913579",
+  "h": "maku-linea-carnica",
+  "t": "MAKU · Línea Cárnica",
+  "pub": true,
+  "a": 5,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899946347",
+  "h": "mayma-linea-carnica",
+  "t": "Mayma · Línea Cárnica",
+  "pub": true,
+  "a": 2,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657899979115",
+  "h": "oestergaard-linea-carnica",
+  "t": "OESTERGAARD · Línea Cárnica",
+  "pub": true,
+  "a": 4,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900011883",
+  "h": "paganini-linea-carnica",
+  "t": "PAGANINI · Línea Cárnica",
+  "pub": true,
+  "a": 1,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900044651",
+  "h": "reich-linea-carnica",
+  "t": "REICH · Línea Cárnica",
+  "pub": true,
+  "a": 3,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900077419",
+  "h": "seydelmann-linea-carnica",
+  "t": "SEYDELMANN · Línea Cárnica",
+  "pub": true,
+  "a": 5,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900110187",
+  "h": "supervac-linea-carnica",
+  "t": "SUPERVAC · Línea Cárnica",
+  "pub": true,
+  "a": 2,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900142955",
+  "h": "technofood-linea-carnica",
+  "t": "Technofood · Línea Cárnica",
+  "pub": true,
+  "a": 18,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900175723",
+  "h": "variovac-linea-carnica",
+  "t": "VARIOVAC · Línea Cárnica",
+  "pub": true,
+  "a": 3,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900208491",
+  "h": "velec-linea-carnica",
+  "t": "VELEC · Línea Cárnica",
+  "pub": true,
+  "a": 2,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900241259",
+  "h": "alba-linea-panaderia",
+  "t": "Alba · Línea Panadería",
+  "pub": true,
+  "a": 3,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900274027",
+  "h": "boyens-linea-panaderia",
+  "t": "Boyens · Línea Panadería",
+  "pub": true,
+  "a": 0,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900306795",
+  "h": "dams-linea-panaderia",
+  "t": "Dams · Línea Panadería",
+  "pub": true,
+  "a": 4,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900339563",
+  "h": "dovaina-linea-panaderia",
+  "t": "Dovaina · Línea Panadería",
+  "pub": true,
+  "a": 7,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900372331",
+  "h": "fagor-linea-panaderia",
+  "t": "Fagor · Línea Panadería",
+  "pub": true,
+  "a": 12,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900405099",
+  "h": "ferneto-linea-panaderia",
+  "t": "Ferneto · Línea Panadería",
+  "pub": true,
+  "a": 9,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900437867",
+  "h": "inoxforni-oculta",
+  "t": "Inoxforni · Línea Panadería",
+  "pub": true,
+  "a": 0,
+  "d": 11
+ },
+ {
+  "id": "gid://shopify/Collection/657900470635",
+  "h": "logiudice-linea-panaderia",
+  "t": "Logiudice · Línea Panadería",
+  "pub": true,
+  "a": 12,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900503403",
+  "h": "matas-linea-panaderia",
+  "t": "Matas · Línea Panadería",
+  "pub": true,
+  "a": 7,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900536171",
+  "h": "mayma-linea-panaderia",
+  "t": "Mayma · Línea Panadería",
+  "pub": true,
+  "a": 3,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900568939",
+  "h": "mecateck-linea-panaderia",
+  "t": "Mecateck · Línea Panadería",
+  "pub": true,
+  "a": 3,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900601707",
+  "h": "memak-linea-panaderia",
+  "t": "Memak · Línea Panadería",
+  "pub": true,
+  "a": 11,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900634475",
+  "h": "mimac-linea-panaderia",
+  "t": "Mimac · Línea Panadería",
+  "pub": true,
+  "a": 9,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900667243",
+  "h": "rollmatic-linea-panaderia",
+  "t": "Rollmatic · Línea Panadería",
+  "pub": true,
+  "a": 11,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900700011",
+  "h": "sartori-linea-panaderia",
+  "t": "Sartori · Línea Panadería",
+  "pub": true,
+  "a": 4,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900732779",
+  "h": "technofood-linea-panaderia",
+  "t": "Technofood · Línea Panadería",
+  "pub": true,
+  "a": 9,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900765547",
+  "h": "zanolli-linea-panaderia",
+  "t": "Zanolli · Línea Panadería",
+  "pub": true,
+  "a": 6,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900798315",
+  "h": "agentes-desmoldantes-y-abrillantadores-insumos-panaderia",
+  "t": "Agentes desmoldantes y abrillantadores · Insumos Panadería",
+  "pub": true,
+  "a": 3,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900831083",
+  "h": "agentes-desmoldantes-y-abrillantadores-linea-panaderia",
+  "t": "Agentes desmoldantes y abrillantadores · Línea Panadería",
+  "pub": true,
+  "a": 0,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900863851",
+  "h": "ahumado",
+  "t": "Ahumado",
+  "pub": true,
+  "a": 1,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900896619",
+  "h": "amasadoras",
+  "t": "Amasadoras",
+  "pub": true,
+  "a": 8,
+  "d": 2
+ },
+ {
+  "id": "gid://shopify/Collection/657900929387",
+  "h": "atadoras-y-consumibles-de-atado",
+  "t": "Atadoras y consumibles de atado",
+  "pub": true,
+  "a": 2,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900962155",
+  "h": "bandejas-para-hornear",
+  "t": "Bandejas para hornear",
+  "pub": true,
+  "a": 2,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657900994923",
+  "h": "batidoras-y-mezcladoras-planetarias",
+  "t": "Batidoras y mezcladoras planetarias",
+  "pub": true,
+  "a": 5,
+  "d": 3
+ },
+ {
+  "id": "gid://shopify/Collection/657901027691",
+  "h": "carros-cutters-y-contenedores",
+  "t": "Carros cutters y contenedores",
+  "pub": true,
+  "a": 1,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901060459",
+  "h": "carros-y-accesorios",
+  "t": "Carros y accesorios",
+  "pub": true,
+  "a": 1,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901093227",
+  "h": "clips",
+  "t": "Clips",
+  "pub": true,
+  "a": 2,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901125995",
+  "h": "coccion",
+  "t": "Cocción",
+  "pub": true,
+  "a": 2,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901158763",
+  "h": "coccion-y-tratamiento-termico",
+  "t": "Cocción y tratamiento térmico",
+  "pub": true,
+  "a": 6,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901191531",
+  "h": "consumibles-de-codificacion-y-marcado",
+  "t": "Consumibles de codificación y marcado",
+  "pub": true,
+  "a": 1,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901224299",
+  "h": "consumibles-de-sacrificio-y-faenado",
+  "t": "Consumibles de sacrificio y faenado",
+  "pub": true,
+  "a": 1,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901257067",
+  "h": "control-de-clima-y-enfriamiento",
+  "t": "Control de clima y enfriamiento",
+  "pub": true,
+  "a": 2,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901289835",
+  "h": "corte-y-fileteado",
+  "t": "Corte y fileteado",
+  "pub": true,
+  "a": 22,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901322603",
+  "h": "cuchillas-y-repuestos",
+  "t": "Cuchillas y repuestos",
+  "pub": true,
+  "a": 1,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901355371",
+  "h": "camaras-de-fermentacion",
+  "t": "Cámaras de fermentación",
+  "pub": true,
+  "a": 6,
+  "d": 2
+ },
+ {
+  "id": "gid://shopify/Collection/657901388139",
+  "h": "divisoras-y-boleadoras",
+  "t": "Divisoras y boleadoras",
+  "pub": true,
+  "a": 20,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901420907",
+  "h": "dosificadores-y-pulverizadores-insumos-panaderia",
+  "t": "Dosificadores y pulverizadores · Insumos Panadería",
+  "pub": true,
+  "a": 0,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901453675",
+  "h": "dosificadores-y-pulverizadores-linea-panaderia",
+  "t": "Dosificadores y pulverizadores · Línea Panadería",
+  "pub": true,
+  "a": 2,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901486443",
+  "h": "elevadores",
+  "t": "Elevadores",
+  "pub": true,
+  "a": 3,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901519211",
+  "h": "embutido-y-porcionado",
+  "t": "Embutido y porcionado",
+  "pub": true,
+  "a": 8,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901551979",
+  "h": "empacadoras-linea-carnica",
+  "t": "Empacadoras · Línea Cárnica",
+  "pub": true,
+  "a": 2,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901584747",
+  "h": "empacadoras-linea-panaderia",
+  "t": "Empacadoras · Línea Panadería",
+  "pub": true,
+  "a": 5,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901617515",
+  "h": "empaque-y-envasado",
+  "t": "Empaque y envasado",
+  "pub": true,
+  "a": 11,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901650283",
+  "h": "etiquetado-y-pesaje",
+  "t": "Etiquetado y pesaje",
+  "pub": true,
+  "a": 4,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901683051",
+  "h": "formado-y-rebozado",
+  "t": "Formado y rebozado",
+  "pub": true,
+  "a": 2,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901715819",
+  "h": "formadoras-y-moldeadoras",
+  "t": "Formadoras y moldeadoras",
+  "pub": true,
+  "a": 7,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901748587",
+  "h": "galleteras-y-equipos-de-pasteleria",
+  "t": "Galleteras y equipos de pastelería",
+  "pub": true,
+  "a": 8,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901781355",
+  "h": "herramientas-y-accesorios",
+  "t": "Herramientas y accesorios",
+  "pub": true,
+  "a": 2,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901814123",
+  "h": "higiene-y-sanitizacion-industrial",
+  "t": "Higiene y sanitización industrial",
+  "pub": true,
+  "a": 10,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901846891",
+  "h": "hornos",
+  "t": "Hornos",
+  "pub": true,
+  "a": 15,
+  "d": 4
+ },
+ {
+  "id": "gid://shopify/Collection/657901879659",
+  "h": "insumos-y-auxiliares-de-panificacion-insumos-panaderia",
+  "t": "Insumos y auxiliares de panificación · Insumos Panadería",
+  "pub": true,
+  "a": 0,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901912427",
+  "h": "insumos-y-auxiliares-de-panificacion-linea-panaderia",
+  "t": "Insumos y auxiliares de panificación · Línea Panadería",
+  "pub": true,
+  "a": 0,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901945195",
+  "h": "insumos-y-consumibles-insumos-carnicos",
+  "t": "Insumos y consumibles · Insumos Cárnicos",
+  "pub": true,
+  "a": 2,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657901977963",
+  "h": "insumos-y-consumibles-linea-carnica",
+  "t": "Insumos y consumibles · Línea Cárnica",
+  "pub": true,
+  "a": 0,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657902010731",
+  "h": "inyeccion-y-marinado",
+  "t": "Inyección y marinado",
+  "pub": true,
+  "a": 11,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657902043499",
+  "h": "laminadoras",
+  "t": "Laminadoras",
+  "pub": true,
+  "a": 8,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657902076267",
+  "h": "lavado-de-vajilla-y-utensilios",
+  "t": "Lavado de vajilla y utensilios",
+  "pub": true,
+  "a": 2,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657902109035",
+  "h": "lazos-y-grapas",
+  "t": "Lazos y grapas",
+  "pub": true,
+  "a": 2,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657902141803",
+  "h": "molienda-y-mezclado",
+  "t": "Molienda y mezclado",
+  "pub": true,
+  "a": 15,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657902174571",
+  "h": "molinos",
+  "t": "Molinos",
+  "pub": true,
+  "a": 1,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657902207339",
+  "h": "papel-para-hamburguesa-y-empaque",
+  "t": "Papel para hamburguesa y empaque",
+  "pub": true,
+  "a": 1,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657902240107",
+  "h": "procesamiento-de-aves",
+  "t": "Procesamiento de aves",
+  "pub": true,
+  "a": 2,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657902272875",
+  "h": "pulverizadores-y-equipos-de-aplicacion",
+  "t": "Pulverizadores y equipos de aplicación",
+  "pub": true,
+  "a": 3,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657902305643",
+  "h": "rebanadoras-y-cortadoras",
+  "t": "Rebanadoras y cortadoras",
+  "pub": true,
+  "a": 8,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657902338411",
+  "h": "refrigeracion",
+  "t": "Refrigeración",
+  "pub": true,
+  "a": 1,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657902371179",
+  "h": "refrigeracion-y-abatimiento",
+  "t": "Refrigeración y abatimiento",
+  "pub": true,
+  "a": 6,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657902403947",
+  "h": "rendering-y-subproductos",
+  "t": "Rendering y subproductos",
+  "pub": true,
+  "a": 5,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657902436715",
+  "h": "repuestos-para-desplume-y-depilado",
+  "t": "Repuestos para desplume y depilado",
+  "pub": true,
+  "a": 2,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657902469483",
+  "h": "tamizadoras",
+  "t": "Tamizadoras",
+  "pub": true,
+  "a": 1,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657902502251",
+  "h": "transporte-y-manipulacion-insumos-carnicos",
+  "t": "Transporte y manipulación · Insumos Cárnicos",
+  "pub": true,
+  "a": 1,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657902535019",
+  "h": "transporte-y-manipulacion-linea-carnica",
+  "t": "Transporte y manipulación · Línea Cárnica",
+  "pub": true,
+  "a": 3,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657902567787",
+  "h": "linea-panaderia",
+  "t": "Línea completa de panadería",
+  "pub": true,
+  "a": 121,
+  "d": 11
+ },
+ {
+  "id": "gid://shopify/Collection/657902600555",
+  "h": "quesos",
+  "t": "Quesos",
+  "pub": true,
+  "a": 8,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/657902633323",
+  "h": "petfood",
+  "t": "Petfood",
+  "pub": true,
+  "a": 23,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/658362532203",
+  "h": "beneficio",
+  "t": "Beneficio",
+  "pub": true,
+  "a": 20,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/658362564971",
+  "h": "corte-y-acondicionamiento",
+  "t": "Corte y acondicionamiento",
+  "pub": true,
+  "a": 42,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/658362597739",
+  "h": "valor-agregado",
+  "t": "Valor agregado",
+  "pub": true,
+  "a": 21,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/658362630507",
+  "h": "empaque",
+  "t": "Empaque",
+  "pub": true,
+  "a": 15,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/658362663275",
+  "h": "higiene",
+  "t": "Higiene",
+  "pub": true,
+  "a": 10,
+  "d": 0
+ },
+ {
+  "id": "gid://shopify/Collection/658362696043",
+  "h": "fermentacion-y-horneado",
+  "t": "Fermentación y horneado",
+  "pub": true,
+  "a": 21,
+  "d": 6
+ }
+]
